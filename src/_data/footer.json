@@ -1,0 +1,40 @@
+{
+  "menu":[
+    {
+      "name":"Inicio",
+      "url":"#"
+    },
+    {
+      "name":"Hoteles con Emoción",
+      "url":"#"
+    },
+    {
+      "name":"¿Qué es <span class=\"-theBBH\">TheBBH</span>?",
+      "url":"#"
+    },
+    {
+      "name":"<span class=\"-theBBH\">TheBBH</span> Black Collection",
+      "url":"#"
+    },
+    {
+      "name":"Destinos que apasionan",
+      "url":"#"
+    },
+    {
+      "name":"Contacto",
+      "url":"#"
+    },
+    {
+      "name":"Novedades",
+      "url":"#"
+    },
+    {
+      "name":"Beneficios Boutique",
+      "url":"#"
+    },
+    {
+      "name":"unirse a <span class=\"-theBBH\">TheBBH</span>",
+      "url":"#"
+    }
+  ]
+}

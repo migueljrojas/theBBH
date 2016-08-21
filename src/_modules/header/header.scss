@@ -1,1 +1,235 @@
-// header styles
+._header{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height:$base;
+  background: $bg-olive;
+  z-index: 100;
+  @include responsive(desktop,large-desktop){
+    height:$base*3;
+  }
+
+  ._logo{
+    width:$base*1.5;
+    height:$base*1.5;
+    background: $light-green;
+    position: absolute;
+    left:10px;
+    text-align: center;
+    line-height:$base*1.5;
+    z-index: 2;
+
+    img{
+      display: inline-block;
+      height: $base;
+      width:auto;
+    }
+    @include responsive(desktop,large-desktop){
+      width:$base*2.5;
+      height:$base*2.5;
+      line-height:$base*2.5;
+      left:0;
+      top:$base*0.5;
+      img{
+        height:$base*2;
+      }
+    }
+  }
+
+  ._slogan{
+    font-family: $secondary-font;
+    float:left;
+    font-size:48px;
+    line-height: 40px;
+    color:$white;
+    margin: auto;
+    width:100%;
+    text-align: center;
+    padding-top: 3px;
+    text-transform: none;
+    @include responsive(desktop,large-desktop){
+      width:auto;
+      color:$olive-green;
+      text-align: left;
+      margin-left: $base*3.5;
+      font-size:70px;
+      margin-top:30px;
+    }
+  }
+
+  ._top{
+    height:40px;
+    @include responsive(desktop,large-desktop){
+      height:80px;
+      background: $white;
+    }
+  }
+
+  ._bottom{
+    max-height:0;
+    width: 100vw;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    background: $bg-olive;
+    transition: max-height 0.7s ease, padding 0.5s ease;
+    position: relative;
+    top:-3px;
+    @include responsive(desktop,large-desktop){
+      min-height: inherit;
+      max-height: inherit;
+      height:$base;
+      top:0;
+      overflow: visible;
+    }
+  }
+
+  ._mainNav,._subNav,._auxiliaryNav{
+    list-style: none;
+    margin:auto;
+    padding: 0;
+    width:calc(100% - 20px);
+    font-weight: $regular;
+    font-size:18px;
+    text-transform: uppercase;
+    a{
+      color:$white;
+      display:block;
+      height:40px;
+      line-height: 40px;
+      text-align: right;
+      border-bottom:1px solid transparentize($light-green,0.7);
+      padding-right: 20px;
+    }
+    @include responsive(desktop,large-desktop){
+      width: auto;
+      li{
+        float:left;
+      }
+      a{
+        padding:0 15px;
+        text-align: center;
+        transition: background 0.5s;
+        &:hover{
+          text-decoration: none;
+          background: rgba(0,0,0,0.1);
+        }
+      }
+    }
+  }
+
+  ._mainNav{
+    margin-top:15px;
+    @include responsive(desktop,large-desktop){
+      margin-top:0;
+      padding-left: $base*3.5;
+      float: left;
+    }
+  }
+  ._subNav{
+    a{
+      color:$light-green;
+    }
+    @include responsive(desktop,large-desktop){
+      float: right;
+      text-align: right;
+      li{
+        display: inline-block;
+        float: none;
+        border-right:1px solid $light-green;
+        &:first-child{
+          border-left:1px solid $light-green;
+        }
+      }
+    }
+  }
+  ._auxiliaryNav{
+    text-align: center;
+    margin-top:15px;
+    li{
+      display: inline-block;
+      width:40px;
+      a{
+        border:none;
+        font-size:24px;
+        text-align: center;
+        padding: 0;
+      }
+    }
+    @include responsive(desktop,large-desktop){
+      float:right;
+      width:160px;
+      margin-top:30px;
+      text-align: right;
+      li{
+        float: none;
+        a{
+          color:$olive-green;
+        }
+      }
+    }
+  }
+
+
+
+  .hamburguer {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+    span{
+      display: block;
+      position: absolute;
+      height: 1px;
+      width: 30px;
+      background: $white;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+      &:nth-child(1){
+        top: 13px;
+      }
+      &:nth-child(2),
+      &:nth-child(3){
+        top: 20px;
+      }
+      &:nth-child(4){
+        top: 27px;
+      }
+    }
+
+    &.-open{
+      span{
+        &:nth-child(1){
+          top: 18px;
+          width: 0;
+          left: 50%;
+        }
+        &:nth-child(2){
+          transform: rotate(45deg);
+        }
+        &:nth-child(3){
+          transform: rotate(-45deg);
+        }
+        &:nth-child(4){
+          top: 18px;
+          width: 0;
+          left: 50%;
+        }
+      }
+
+      &+ ._bottom{
+        max-height:600px;
+        padding-bottom: 10px;
+        transition: max-height 1.7s ease, padding 0.5s ease;
+        overflow-x: hidden;
+        overflow-y: visible;
+      }
+    }
+  }
+}

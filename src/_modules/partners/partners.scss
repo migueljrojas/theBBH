@@ -1,1 +1,70 @@
-// partners styles
+._partners{
+  background: $white;
+  padding: 40px 0;
+
+  h2{
+    font-size:16px;
+    text-align: center;
+    color:transparentize($olive-green,0.3);
+    margin-bottom: $base;
+  }
+
+  ._partnersWrapper{
+    overflow: hidden;
+    height:120px;
+    position: relative;
+    &:after,
+    &:before{
+      content:'';
+      display: block;
+      width:20px;
+      position: absolute;
+      top:0;
+      bottom: 0;
+    }
+    &:after{
+      right:0;
+      background: linear-gradient(to left, rgba(0,0,0,0.1),transparent);
+    }
+    &:before{
+      left:0;
+      background: linear-gradient(to right, rgba(0,0,0,0.1),transparent);
+    }
+
+    @include responsive(desktop,large-desktop){
+      &:after,
+      &:before{
+        display:none;
+      }
+    }
+  }
+  ._partnersScroller{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 120%;
+    @include responsive(desktop,large-desktop){
+      overflow: hidden;
+    }
+  }
+
+  ._items{
+    width:200vw;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 $base*1.5;
+    margin: auto;
+    height: 120px;
+
+    li{
+      float:left;
+      margin:0 $base 0 0;
+      &:last-child{
+        padding-right: $base*1.5;
+      }
+    }
+    @include responsive(desktop,large-desktop){
+      justify-content: center;
+    }
+  }
+}

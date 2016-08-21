@@ -1,0 +1,43 @@
+{
+  "slogan":"Hoteles con emoción",
+  "menu":[
+    {
+      "name":"Argentina",
+      "url":"#"
+    },
+    {
+      "name":"Brasil",
+      "url":"#"
+    },
+    {
+      "name":"Chile",
+      "url":"#"
+    },
+    {
+      "name":"Colombia",
+      "url":"#"
+    },
+    {
+      "name":"Peru",
+      "url":"#"
+    },
+    {
+      "name":"Uruguay",
+      "url":"#"
+    }
+  ],
+  "subMenu":[
+    {
+      "name":"¿Qué es <span class=\"-theBBH\">TheBBH</span>?",
+      "url":"#"
+    },
+    {
+      "name":"<span class=\"-theBBH\">TheBBH</span> Black Collection",
+      "url":"#"
+    },
+    {
+      "name":"Contacto",
+      "url":"#"
+    }
+  ]
+}
