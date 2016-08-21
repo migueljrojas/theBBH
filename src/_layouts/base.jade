@@ -28,10 +28,12 @@ body
   <![endif]-->
 
   .wrapper
-    header
+    block header
+      include ../_modules/header/header.jade
     main
       block content
-    footer
+    block footer
+      include ../_modules/footer/footer.jade
 
   block scripts
     script(src= baseUrl + 'scripts/main.js')

@@ -1,0 +1,42 @@
+$canary-screen-sm-min: 320px;
+$canary-screen-md-min: 900px;
+$canary-screen-lg-min: 1440px;
+
+/** Mixins for responsive content **/
+
+@mixin landscape {
+    @media screen and (max-width: #{$canary-screen-md-min - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: #{$canary-screen-md-min}) and (max-width: #{$canary-screen-lg-min - 1px}){
+        @content;
+    }
+}
+
+@mixin large-desktop {
+    @media screen and (min-width: #{$canary-screen-lg-min}) {
+        @content;
+    }
+}
+@mixin responsive($devices...) {
+    @each $device in $devices {
+        @if $device == landscape {
+            @include landscape {
+                @content;
+            }
+        }
+        @if $device == desktop {
+            @include desktop {
+                @content;
+            }
+        }
+        @if $device == large-desktop {
+            @include large-desktop {
+                @content;
+            }
+        }
+    }
+}
