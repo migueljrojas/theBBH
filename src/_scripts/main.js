@@ -4,9 +4,9 @@
 'use strict';
 
 var $ = require('jquery');
-var Link = require('../_modules/link/link');
+var Header = require('../_modules/header/header');
 
 $(function() {
-  new Link(); // Activate Link modules logic
+  new Header(); // Activate Link modules logic
   console.log('Welcome to Yeogurt!');
 });

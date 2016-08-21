@@ -1,2 +1,25 @@
+include ../partners/partners
+
 footer._footer
-  p This is an example paragraph for the footer module
+  +partners
+  .container
+    .row
+      .col-xs-24.col-md-12
+        ul._footerLogo
+          li
+            img._BBH-large(src="/images/BBH-logo-lg.svg")
+          li
+            a(href="#",target="_blank")
+              i.fa.fa-facebook-f
+          li
+            a(href="#",target="_blank")
+              i.fa.fa-instagram
+
+      .col-xs-24.col-md-12
+        ul._footerNav
+          each val in site.data.footer.menu
+            li
+              a(href="#{val.url}")!= val.name
+
+
+

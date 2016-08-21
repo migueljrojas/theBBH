@@ -1,0 +1,25 @@
+{
+  "title":"Amigos de <span class=\"-theBBH\">TheBBH</span>",
+  "partners":[
+    {
+      "src":"/images/partners/argentina.jpg",
+      "url":"#",
+      "name":"Argentina"
+    },
+    {
+      "src":"/images/partners/club-tapiz.jpg",
+      "url":"#",
+      "name":"Club Tapiz"
+    },
+    {
+      "src":"/images/partners/american-express.jpg",
+      "url":"#",
+      "name":"American Express"
+    },
+    {
+      "src":"/images/partners/latam.jpg",
+      "url":"#",
+      "name":"Latam"
+    }
+  ]
+}

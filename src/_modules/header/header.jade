@@ -1,46 +1,50 @@
 header._header
-  ._logo
-    a(href="#")
-      img(src="#",alt="The BBH")
   nav
     ._top
-      ._slogan Hoteles con emoción
-      ul._auxiliaryNav.pull-right.hidden-xs.hidden-sm
-        li
-          i.fa.fa-search
-        li
-          i.fa.fa-facebook-f
-        li
-          i.fa.fa-instagram
-    .bottom
-      .hamburguer.hidden-md.hidden-lg.pull-right
-        span
-        span
-        span
-        span
-      ul._mainNav
-        li
-          a(href="#") Argentina
-        li
-          a(href="#") Argentina
-        li
-          a(href="#") Argentina
-        li
-          a(href="#") Argentina
-        li
-          a(href="#") Argentina
-        li
-          a(href="#") Argentina
-        li
-          a(href="#") Argentina
-        li
-          a(href="#") Argentina
-      ul._auxiliaryNav.pull-right.hidden-md.hidden-lg
-        li
-          i.fa.fa-search
-        li
-          i.fa.fa-facebook-f
-        li
-          i.fa.fa-instagram
+      .container
+        .row
+          .col-xs-24
+            ._logo
+              a(href="#")
+                img(src="/images/BBH-logo.svg",alt="The BBH")
+            h1._slogan
+              = site.data.header.slogan
+            ul._auxiliaryNav.pull-right.hidden-xs.hidden-sm
+              li
+                a(href="#")
+                  i.fa.fa-search
+              li
+                a(href="#")
+                  i.fa.fa-facebook-f
+              li
+                a(href="#")
+                  i.fa.fa-instagram
+    .hamburguer.hidden-md.hidden-lg.pull-right
+      span
+      span
+      span
+      span
+    ._bottom
+      .container
+        .row
+          .col-xs-24
+            ul._mainNav
+              each val in site.data.header.menu
+                li
+                  a(href="#{val.url}")!= val.name
+            ul._subNav
+              each val in site.data.header.subMenu
+                li
+                  a(href="#{val.url}")!= val.name
+            ul._auxiliaryNav.hidden-md.hidden-lg
+              li
+                a(href="#")
+                  i.fa.fa-search
+              li
+                a(href="#")
+                  i.fa.fa-facebook-f
+              li
+                a(href="#")
+                  i.fa.fa-instagram
 
 

@@ -1,6 +1,12 @@
-mixin partners(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+mixin partners()
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the partners module
+  section._partners
+    h2!= site.data.partners.title
+
+    ._partnersWrapper
+      ._partnersScroller
+        ul._items
+          each val in site.data.partners.partners
+            li
+              a(href="#{val.url}",target="_blank")
+                img(src="#{val.src}",alt="#{val.name}")
