@@ -5,8 +5,32 @@ include _modules/carousel/carousel
 block content
   main._page._home
 
-    section
-        +carousel
+    section.container-fluid._top
+      .row
+        .col-xs-24
+          +carousel('home',site.data.home.carousel,'regular')
+
+    section._mid.-pattern
+      .container
+        .row
+          .col-xs-24.col-sm-12.col-md-5._newsletter
+            p.h2
+              span.x2!= site.data.home.newsletter.title
+            ._emblem
+            form
+              label!= site.data.home.newsletter.label
+              input(placeholder="#{site.data.home.newsletter.input}")
+              button!= site.data.home.newsletter.button
+          each val in site.data.home.topHotels
+            .col-xs-24.col-sm-12.col-md-9._hotel(class="#{val.isNew}")
+              img(src="#{val.img}")
+              ._hotelData
+                h2!= val.name
+                h3!= val.location
+          .col-xs-24.col-sm-12.col-md-5._view-more
+            p!= site.data.home.viewMore
+            a
+              i.fa.fa-plus
 
 
     .container

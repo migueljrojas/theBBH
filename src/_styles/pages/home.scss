@@ -1,0 +1,138 @@
+._home{
+  ._top{
+    position: relative;
+    height: 600px;
+  }
+  ._carousel{
+    position: absolute;
+    left:0;
+    right:0;
+    height:400px;
+    @include responsive(desktop,large-desktop){
+      height:600px;
+    }
+
+    .carousel-inner{
+      height: 400px;
+      @include responsive(desktop,large-desktop){
+        height:600px;
+      }
+    }
+
+    .item{
+      height:100%;
+      padding-bottom: 140px;
+      background: $black;
+      overflow: hidden;
+      img{
+        height:100%;
+        width:auto;
+        max-width: none;
+        transform: translateX(-20%);
+      }
+      @include responsive(desktop,large-desktop){
+        padding-bottom: 0;
+        img{
+          transform: none;
+          width:100%;
+          height: auto;
+          position: absolute;
+          bottom:0;
+        }
+      }
+    }
+
+    .carousel-caption{
+      position: absolute;
+      bottom:0;
+      left:0;
+      background: $black;
+      width: 100%;
+      max-width:320px;
+      height:140px;
+      @include responsive(desktop,large-desktop){
+        left:15%;
+        text-align: left;
+        padding: 15px;
+        h2{
+          font-size:30px;
+        }
+        h3{
+          font-size:20px;
+        }
+      }
+    }
+    .carousel-indicators{
+      bottom:10px;
+    }
+  }
+  ._mid{
+    padding: $base*2 0;
+  }
+  ._newsletter{
+    padding-top: 10px;
+    background: $olive-green;
+    color:$white;
+    height: 310px;
+    position: relative;
+    ._emblem{
+      width:100px;
+      height:100px;
+      margin:10px 0;
+    }
+    form{
+      position: absolute;
+      bottom:0;
+      left:0;
+      width: 100%;
+      display: block;
+      min-height:120px;
+      label{
+        text-transform: uppercase;
+        color:$brown;
+        font-weight: $regular;
+        font-size:1.8rem;
+        display: block;
+        position: absolute;
+        bottom:$base*2;
+        left:8px;
+        line-height:16px;
+      }
+      input{
+        position: absolute;
+        left:0;
+        padding: 0 15px;
+        height:$base;
+        display: block;
+        border:none;
+        width: 100%;
+        bottom: $base;
+        font-size:1.8rem;
+        color:$brown;
+        &:focus{
+          outline:none;
+          border:none;
+        }
+      }
+      button{
+        position: absolute;
+        border:none;
+        background: transparent;
+        width: 100%;
+        bottom:0;
+        left:0;
+        height: $base;
+        display:block;
+        text-align: right;
+        padding-right: 10px;
+        font-size:2rem;
+        text-transform: uppercase;
+        font-weight:$regular;
+        transition: background 0.5s ease;
+        &:hover{
+          background: rgba(0,0,0,0.1);
+        }
+      }
+    }
+  }
+}

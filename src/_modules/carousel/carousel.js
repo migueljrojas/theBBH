@@ -5,9 +5,8 @@ var Carousel = function() {
   this.name = 'carousel';
   console.log('%s module', this.name);
 
-  $('#myCarousel').carousel({
-    interval: 200000
-  });
+  $('.carousel-indicators li:first-child').addClass('active');
+  $('.carousel-inner .item:first-child').addClass('active');
 };
 
 module.exports = Carousel;

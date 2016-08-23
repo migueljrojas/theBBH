@@ -1,0 +1,44 @@
+{
+  "carousel":[
+    {
+      "imgsrc":"/images/home/slider-1.jpg",
+      "title":"Tierra Atacama Hotel & Spa",
+      "subtitle":"Atacama, Chile"
+    },
+    {
+      "imgsrc":"/images/home/slider-2.jpg",
+      "title":"Buenos Aires Hotel & Spa",
+      "subtitle":"Buenos Aires, Argentina"
+    }
+  ],
+  "newsletter":{
+    "title":"<span class=\"-bold\">Descubrí</span><br> la experiencia",
+    "label":"Recibí nuestras<br> novedades",
+    "input":"ingresá aquí tu email",
+    "button":"Suscribite"
+  },
+  "topHotels":[
+    {
+      "img":"/images/home/top-hotels/1.jpg",
+      "name":"Casa Turquesa",
+      "location":"Paraty, Brasil",
+      "isNew":"-new"
+    },
+    {
+      "img":"/images/home/top-hotels/2.jpg",
+      "name":"LA ESCONDIDA CASA DE HUÉSPEDES & SPA",
+      "location":"Patagonia, Argentina"
+    },
+    {
+      "img":"/images/home/top-hotels/3.jpg",
+      "name":"UXUA CASA HOTEL & SPA",
+      "location":"Bahía, Brasil"
+    },
+    {
+      "img":"/images/home/top-hotels/4.jpg",
+      "name":"ALTO ATACAMA DESERT LODGE & SPA",
+      "location":"Atacama, Chile"
+    }
+  ],
+  "viewMore":"Mirá nuestra colección de <span class=\"-bold\">Hoteles con emoción</span>"
+}
