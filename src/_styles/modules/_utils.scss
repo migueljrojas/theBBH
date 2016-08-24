@@ -3,7 +3,7 @@ a{
   transition: color 0.5s ease;
 }
 
-.x2{font-size:1.25rem;}
+.x2{font-size:1.25em;}
 
 .-negative{
   filter: grayscale(100%) brightness(200%);
@@ -20,4 +20,34 @@ a{
 .-theBBH{
   text-transform: none;
   font-weight: $bold;
+}
+
+.-pattern{
+  background: url('/images/pattern.jpg') repeat;
+}
+
+.-new{
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    display: block;
+    width:66px;
+    height: 96px;
+    background: url(/images/tag-new.png) no-repeat right top;
+    z-index:100;
+  }
+}
+
+._emblem{
+  min-width: 50px;
+  min-height:50px;
+  border-radius:50%;
+  background-color: $white;
+  background-image: url(/images/BBh-badge.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
 }

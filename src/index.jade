@@ -1,15 +1,86 @@
 extends _layouts/base
-
 include _modules/link/link
+include _modules/carousel/carousel
 
 block content
-  .container
-    .yeogurt-info
-      h1 Welcome to Yeogurt!
-      p.
-        Take a look at the
-        #[+link({text: 'documentation'})(href='https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---')]
-        and start mixing up something awesome.
-      p
-        img.logo(src="images/yeogurt-swirl.png", width="75px")
-  code.version v1.5.3
+  main._page._home
+
+    section.container-fluid._top
+      .row
+        .col-xs-24
+          +carousel('home',site.data.home.carousel,'regular')
+
+    section._mid.-pattern
+      .container
+        .row
+          .col-xs-24.col-md-4._newsletter
+            p.h2
+              span.x2!= site.data.home.newsletter.title
+            ._emblem
+            form
+              label!= site.data.home.newsletter.label
+              input(placeholder="#{site.data.home.newsletter.input}")
+              button!= site.data.home.newsletter.button
+          each val in site.data.home.topHotels
+            .col-xs-24.col-md-10._hotel(class="#{val.isNew}")
+              .img-container
+                img(src="#{val.img}")
+              a(href="#{val.link}")
+                ._hotelData
+                  h2!= val.name
+                  h3!= val.location
+          .col-xs-24.col-md-4._view-more
+            p.h2!= site.data.home.viewMore
+            a(href="#")
+              i.fa.fa-plus
+    section._benefits
+      .container
+        ul.list-unstyled
+          li
+            img(src="/images/BBH-medal.svg",alt="Beneficio boutique")
+          each val in site.data.home.benefits
+            li
+              div
+                h2!= val.hotel
+                p!= val.benefit
+          li
+            h4
+              | Más
+              <br> beneficios
+              <br> Boutique
+              <br>
+              span.-theBBH TheBBH
+            a(href="#")
+              i.fa.fa-plus
+
+    section._promos
+      .container
+        ul.list-unstyled.row
+          each val in site.data.home.promos
+            li.col-xs-24.col-md-12
+              a(href="#{val.link}")
+                img.img-responsive(src="#{val.src}")
+
+    section._locations.-pattern
+      .container
+        .row
+          .col-xs-24
+            h2._title
+              | Destinos que
+              <br>
+              span.-bold apasionan
+              ._emblem
+        ul.list-unstyled
+          each val in site.data.home.locations
+            li
+              a(href="#{val.link}")
+                img.img-responsive(src="#{val.src}")
+              ._locationData
+                a(href="#{val.link}")
+                  h2.-bold!= val.city
+                  h3!= val.country
+        .row
+          a._more-locations.col-xs-24.col-md-12.col-md-offset-6(href="#")
+            i.fa.fa-map-marker
+            | MÁS DESTINOS <br>QUE APASIONAN AQUÍ
+

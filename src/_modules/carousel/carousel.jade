@@ -1,0 +1,21 @@
+mixin carousel(id, data, mode)
+  div(class="#{mode} _carousel")
+    div(id="#{id}",data-ride="carousel").carousel.slide
+      // Indicators
+      ol.carousel-indicators
+        each val, index in data
+          li(data-target='##{id}', data-slide-to='#{index}')
+      .carousel-inner(role="listbox")
+        each val, index in data
+          .item
+            a(href="#{val.link}")
+              img(src='#{val.imgsrc}', alt='#{val.title}')
+            .carousel-caption
+              a(href="#{val.link}")
+                h2.-bold!= val.title
+                h3!= val.subtitle
+
+      a.left.carousel-control(href='##{id}', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left
+      a.right.carousel-control(href='##{id}', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right
