@@ -1,7 +1,10 @@
 ._home{
   ._top{
     position: relative;
-    height: 600px;
+    height: 400px;
+    @include responsive(desktop,large-desktop){
+      height:600px;
+    }
   }
   ._carousel{
     position: absolute;
@@ -67,18 +70,36 @@
     }
   }
   ._mid{
-    padding: $base*2 0;
+    padding: $base 0;
+    @include responsive(desktop,large-desktop) {
+      padding: $base*2 0;
+    }
   }
   ._newsletter{
     padding-top: 10px;
     background: $olive-green;
     color:$white;
-    height: 310px;
+    height: 220px;
     position: relative;
+
+    @include responsive(desktop,large-desktop){
+      height:310px;
+    }
+
+    p.h2{
+      float:left;
+      @include responsive(desktop,large-desktop){
+        float:none;
+      }
+    }
     ._emblem{
       width:100px;
       height:100px;
       margin:10px 0;
+      float: right;
+      @include responsive(desktop,large-desktop){
+        float:none;
+      }
     }
     form{
       position: absolute;
@@ -133,6 +154,276 @@
           background: rgba(0,0,0,0.1);
         }
       }
+    }
+  }
+  ._hotel{
+    height:auto;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    @include responsive(desktop,large-desktop) {
+      height: 310px;
+      margin-bottom:8px;
+      border-left:8px solid transparent;
+
+      &:nth-of-type(4),
+      &:nth-of-type(5){
+        border-right:8px solid transparent;
+        border-left:none;
+      }
+
+      .img-container{
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+      }
+    }
+    img{
+      height:auto;
+      width:100%;
+      @include responsive(desktop,large-desktop) {
+        width:auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+        overflow-x: hidden;
+      }
+    }
+    ._hotelData{
+      position: absolute;
+      width:100%;
+      z-index: 2;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      margin:auto;
+      padding: 15px;
+      background: linear-gradient(to bottom right, rgba(0,0,0,0.8) 30%, transparent 60%);
+      color:$white;
+
+      h2{
+        width:70%;
+        font-weight: $bold;
+        @include responsive(desktop,large-desktop) {
+          width:35%;
+        }
+      }
+    }
+    &.-new{
+      z-index:2;
+    }
+  }
+  ._view-more{
+    background: $light-green;
+    color:$brown;
+    height:140px;
+    padding-top: 10px;
+    a{
+      display: block;
+      color:$olive-green;
+      font-size:2.4rem;
+      padding: 5px;
+      border:1px solid;
+      border-radius:3px;
+      width: $base;
+      text-align: center;
+      margin-top: 8px;
+    }
+    @include responsive(desktop,large-desktop) {
+      height:310px;
+    }
+  }
+  ._benefits{
+    background: $light-green;
+
+    ul {
+      display:flex;
+      flex-wrap: wrap;
+      li{
+        flex-basis: 300px;
+        color:$brown;
+        border-top:10px solid $white;
+        padding:10px 0;
+
+        h2{
+          text-transform: none;
+          font-weight: $bold;
+          margin-bottom: 7px;
+        }
+
+        p{
+          width:70%;
+          font-size:1.6rem;
+        }
+
+        &:first-child,
+        &:last-child{
+          border-top:none;
+        }
+        &:first-child{
+          text-align: center;
+          img{
+            width:100px;
+          }
+        }
+        &:last-child{
+          h4{
+            font-size:2rem;
+          }
+          a{
+            display: block;
+            color:$olive-green;
+            font-size:2rem;
+            padding: 2px;
+            border:1px solid;
+            border-radius:3px;
+            width: $base - 10px;
+            text-align: center;
+            margin-top: 8px;
+          }
+        }
+      }
+
+      @include responsive(desktop,large-desktop) {
+        flex-wrap: nowrap;
+        margin-bottom: 0;
+        li{
+          flex-basis: 20%;
+          margin-right: 1px;
+          padding-bottom: 0;
+
+          div{
+            border-right:1px solid $white;
+            height:160px;
+            padding: 10px;
+          }
+
+          &:first-child{
+            text-align: center;
+            img{
+              width:130px;
+              margin-top: 15px;
+            }
+          }
+          &:last-child{
+            padding: 15px;
+            h4{
+              font-size:1.6rem;
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ._promos{
+    padding: $base 0;
+    ul{
+      li{
+        margin-bottom: 10px;
+        @include responsive(desktop,large-desktop) {
+          margin-bottom: 0;
+        }
+        img{
+          margin:auto;
+        }
+      }
+    }
+  }
+
+  ._locations{
+    padding: $base 0;
+
+    ul{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      li{
+        flex-basis: 140px;
+        margin-bottom: 16px;
+        position: relative;
+        @include responsive(desktop,large-desktop) {
+          flex-basis: 280px;
+          flex-wrap: nowrap;
+        }
+      }
+    }
+    ._locationData{
+      position: absolute;
+      width:100%;
+      z-index: 2;
+      left:0;
+      bottom:0;
+      margin:auto;
+      padding: 15px;
+      background: linear-gradient(to top, rgba(0,0,0,0.6) 40%, transparent);
+      color:$white;
+      max-width: 280px;
+      @include responsive(desktop,large-desktop) {
+        padding-top:20%;
+      }
+      a{
+        color:$white;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+
+    h2._title{
+      width: 300px;
+      margin: 0 auto 50px;
+      font-size: 2.8rem;
+      line-height: 2.6rem;
+      color: $olive-green;
+      padding: 0 6px;
+      ._emblem{
+        float:right;
+        display: inline-block;
+        margin-top:-50px;
+        width:100px;
+        height:100px;
+      }
+      .-bold{
+        font-size:1.22em;
+      }
+    }
+
+    ._more-locations{
+      display: block;
+      padding:5px 0;
+      font-weight: $bold;
+      text-align: center;
+      background: $white;
+      color: $olive-green;
+      border:1px solid $olive-green;
+      font-size:1.8rem;
+      margin-top:20px;
+      text-decoration: none;
+      position: relative;
+      i{
+        font-size:2.8rem;
+        margin-right: 10px;
+      }
+      @include responsive(desktop,large-desktop) {
+        line-height: $base;
+        br{
+          display:none;
+        }
+      }
+    }
+
+    @include responsive(desktop,large-desktop) {
+      padding: $base*2 0;
     }
   }
 }

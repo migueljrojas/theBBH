@@ -8,10 +8,12 @@ mixin carousel(id, data, mode)
       .carousel-inner(role="listbox")
         each val, index in data
           .item
-            img(src='#{val.imgsrc}', alt='#{val.title}')
+            a(href="#{val.link}")
+              img(src='#{val.imgsrc}', alt='#{val.title}')
             .carousel-caption
-              h2.-bold!= val.title
-              h3!= val.subtitle
+              a(href="#{val.link}")
+                h2.-bold!= val.title
+                h3!= val.subtitle
 
       a.left.carousel-control(href='##{id}', role='button', data-slide='prev')
         span.glyphicon.glyphicon-chevron-left
