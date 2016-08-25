@@ -1,0 +1,51 @@
+extends ../_layouts/base
+include ../_modules/map/map
+include ../_modules/hotelcard/hotelcard
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  main._page._search
+    section.form.-pattern
+      .container
+        .row
+          .col-xs-22.col-xs-offset-1.col-md-8.col-md-offset-8.col-lg-6.col-md-offset-9
+            form
+              input
+              button(type="submit")
+                i.fa.fa-paper-plane
+
+    section.map
+      .container
+        .row
+          .col-xs-24
+            h1
+              span._qty!= '10 '
+              span._desc hoteles encontrados en
+              span._city!= ' ' + site.data.search.searchedCity
+
+            button._mapToggle
+              span
+              i.fa.fa-chevron-up
+
+            .row
+              .col-xs-24
+                +map()
+
+    section.searchResults
+      .container
+        .row
+          each val in site.data.search.hotels
+            .col-xs-24.col-md-8.col-lg-6
+              +hotelcard(val,full)
+
+          .col-xs-24._showMore
+            p
+              span 8 de 10
+              | Hoteles. Mostrar más
+            a(href="#")
+              i.fa.fa-chevron-down
+
+

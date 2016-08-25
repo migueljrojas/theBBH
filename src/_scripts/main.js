@@ -6,10 +6,12 @@
 var $ = require('jquery');
 var Header = require('../_modules/header/header');
 var Carousel = require('../_modules/carousel/carousel');
+var Search = require('../search/search');
 
 $(function() {
   require('bootstrap');
   new Header(); // Activate Link modules logic
   new Carousel();
+  new Search();
   console.log('Welcome to Yeogurt!');
 });

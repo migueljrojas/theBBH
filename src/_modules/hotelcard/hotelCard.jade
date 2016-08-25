@@ -1,6 +1,29 @@
-mixin hotelcard(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+mixin hotelcard(data, mode)
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the hotelcard module
+  ._hotel-card.clearfix(class="#{mode}")
+    .img-container
+      a(href="data.url")
+        img.img-responsive(src="#{data.image}",alt="#{data.name}")
+      ._data-overlay
+        ul._price(class="-#{data.price}")
+          li
+            i.fa.fa-dollar
+          li
+            i.fa.fa-dollar
+          li
+            i.fa.fa-dollar
+          li
+            i.fa.fa-dollar
+
+        ul._social
+          li.-facebook
+            i.fa.fa-facebook-f
+          li.-twitter
+            i.fa.fa-twitter
+          li.-pinterest
+            i.fa.fa-pinterest-p
+    ._info
+      a(href="data.url")
+        h2!= data.name
+      h3!= data.city
+      h4!= data.country

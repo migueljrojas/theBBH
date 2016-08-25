@@ -1,1 +1,126 @@
-// hotelcard styles
+._hotel-card{
+  padding-bottom: 10px;
+  border-bottom: 1px dotted $gray;
+  margin-bottom: 10px;
+  .img-container{
+    position: relative;
+    width:30%;
+    float:left;
+    margin-right: 10px;
+    @include responsive(desktop,large-desktop){
+      width:100%;
+      float:none;
+    }
+    ._data-overlay{
+      position: absolute;
+      padding: 10px;
+      bottom:0;
+      top:0;
+      width:100%;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 30%, transparent 60%);
+      @include responsive(desktop,large-desktop){
+        padding: 20px;
+        background: linear-gradient(to top, rgba(0,0,0,0.6) 10%, transparent 50%);
+        width:calc(100% - 16px);
+        &:hover{
+          ._social,
+          ._price{
+            opacity:1;
+          }
+        }
+      }
+    }
+    ._social{
+      display:block;
+      color:$white;
+      list-style: none;
+      margin:0;
+      padding:0;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      top:10px;
+      right:10px;
+      li{
+        display:inline-block;
+        margin-left:10px;
+      }
+
+      @include responsive(desktop,large-desktop){
+        top:initial;
+        bottom:20px;
+        right:20px;
+        font-size:2rem;
+      }
+    }
+    ._price{
+      list-style: none;
+      margin:0;
+      padding:0;
+      position: absolute;
+      bottom:10px;
+
+      @include responsive(desktop,large-desktop){
+        opacity:0;
+        bottom:20px;
+        font-size:2rem;
+        transition: opacity 0.5s ease;
+      }
+
+      li{
+        display:inline-block;
+        color:$white;
+        opacity: 0.5;
+      }
+
+      &.-low{
+        li{
+          &:nth-child(1){
+            opacity: 1;
+          }
+        }
+      }
+      &.-mid{
+        li{
+          &:nth-child(1),
+          &:nth-child(2){
+            opacity: 1;
+          }
+        }
+      }
+      &.-high{
+        li{
+          &:not(:last-child){
+            opacity: 1;
+          }
+        }
+      }
+      &.-top{
+        li{
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  a{
+    text-decoration: none;
+    h2{
+      font-weight: $regular;
+      color:$olive-green;
+    }
+  }
+
+  @include responsive(desktop,large-desktop){
+    border:none;
+    padding: 0;
+    margin-bottom:$base;
+    ._info{
+      padding: 20px;
+      border:1px solid $olive-green;
+      border-top:none;
+      height:120px;
+      width:calc(100% - 16px);
+    }
+  }
+}
