@@ -1,0 +1,69 @@
+{
+  "searchedCity":"Buenos Aires",
+  "hotels":[
+    {
+      "name":"CASA SUR RECOLETA",
+      "city":"Recoleta, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-01.jpg",
+      "price":"high",
+      "url":"#"
+    },
+    {
+      "name":"HUB PORTEÑO",
+      "city":"Recoleta, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-02.jpg",
+      "price":"high",
+      "url":"#"
+    },
+    {
+      "name":"SAINTE JEANNE HOTEL BOUTIQUE & SPA",
+      "city":"Mar del Plata, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-03.jpg",
+      "price":"mid",
+      "url":"#"
+    },
+    {
+      "name":"LEGADO MITICO",
+      "city":"Palermo, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-04.jpg",
+      "price":"mid",
+      "url":"#"
+    },
+    {
+      "name":"HOTEL DEL CASCO",
+      "city":"San Isidro, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-05.jpg",
+      "price":"top",
+      "url":"#"
+    },
+    {
+      "name":"HOME BUENOS AIRES",
+      "city":"Palermo, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-06.jpg",
+      "price":"top",
+      "url":"#"
+    },
+    {
+      "name":"ALGODÓN MANSIÓN",
+      "city":"Recoleta, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-07.jpg",
+      "price":"high",
+      "url":"#"
+    },
+    {
+      "name":"ESTANCIA LA BAMBA DE ARECO",
+      "city":"San Antonio de Areco, Buenos Aires",
+      "country":"",
+      "image":"/images/search/hotel-08.jpg",
+      "price":"low",
+      "url":"#"
+    }
+  ]
+}
