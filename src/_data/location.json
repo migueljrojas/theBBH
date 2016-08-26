@@ -1,0 +1,68 @@
+{
+  "city":"Buenos Aires",
+  "country":"Argentina",
+  "quote":"\"Intensa, activa, alegre y cosmopolita. Una ciudad que se disfruta tanto de día como de noche\"",
+  "info":[
+    {
+      "text":"Buenos Aires, capital de la República Argentina, es una de las ciudades más importantes de Latinoamérica. Ciudad cosmopolita que manifiesta a cada paso la influencia de las numerosas corrientes inmigratorias que la conformaron. Los españoles fundaron la ciudad dos veces, en 1536 y 1580, y a partir del siglo XIX, Buenos Aries se convirtió en un importante centro económico, financiero y cultural. Su actividad comercial es muy intensa, reflejada en numerosos locales de las principales marcas mundiales, galerías y centros comerciales."
+    },
+    {
+      "text":"Es también un notable centro cultural, con numerosos museos, salas de exposiciones y conferencias, galerías de arte, cines y teatros con espectáculos nacionales e internacionales de primer nivel. La ciudad concentra en sus distintos barrios, los más diversos atractivos. En el sector histórico de la ciudad formado por los barrios de San Telmo y Monserrat, se encuentran los principales monumentos históricos, además de un patrimonio arquitectónico colonial intacto. El pintoresco barrio de La Boca, con su famosa calle Caminito y su típica arquitectura multicolor."
+    },
+    {
+      "text":"Los barrios residenciales como Palermo y Recoleta se destacan por sus amplios espacios verdes y sus elegantes mansiones y por ubicarse allí los mejores restaurantes, cafés , pubs y tiendas. Y el reciente barrio de Puerto Madero, con sus antiguos depósitos portuarios convertidos en oficinas, y elegantes restaurantes con vista al río. El tango es uno de sus famosos atractivos a nivel internacional. La ciudad cuenta con numerosas milongas y tanguerías donde podrá disfrutar de un excelente show o animarse a tomar algunas lecciones para aprender a bailar uno de los bailes más sensuales del mundo."
+    }
+  ],
+  "images":[
+    {
+      "src":"/images/location/gallery/1.jpg",
+      "caption":"Avenida 9 de Julio y Obelisco, un pasaje que debes incluir en tu itinerario."
+    },
+    {
+      "src":"/images/location/gallery/2.jpg",
+      "caption":"Avenida 9 de Julio y Obelisco, un pasaje que debes incluir en tu itinerario."
+    },
+    {
+      "src":"/images/location/gallery/3.jpg",
+      "caption":"Avenida 9 de Julio y Obelisco, un pasaje que debes incluir en tu itinerario."
+    },
+    {
+      "src":"/images/location/gallery/4.jpg",
+      "caption":"Avenida 9 de Julio y Obelisco, un pasaje que debes incluir en tu itinerario."
+    }
+  ],
+  "hotels":[
+    {
+      "name":"CASA SUR RECOLETA",
+      "city":"Recoleta, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-01.jpg",
+      "price":"high",
+      "url":"#"
+    },
+    {
+      "name":"HUB PORTEÑO",
+      "city":"Recoleta, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-02.jpg",
+      "price":"high",
+      "url":"#"
+    },
+    {
+      "name":"SAINTE JEANNE HOTEL BOUTIQUE & SPA",
+      "city":"Mar del Plata, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-03.jpg",
+      "price":"mid",
+      "url":"#"
+    },
+    {
+      "name":"LEGADO MITICO",
+      "city":"Palermo, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-04.jpg",
+      "price":"mid",
+      "url":"#"
+    }
+  ]
+}

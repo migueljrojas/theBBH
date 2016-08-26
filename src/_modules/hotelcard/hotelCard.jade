@@ -1,6 +1,6 @@
 mixin hotelcard(data, mode)
 
-  ._hotel-card.clearfix(class="#{mode}")
+  ._hotel-card.clearfix(class="-#{mode}")
     .img-container
       a(href="data.url")
         img.img-responsive(src="#{data.image}",alt="#{data.name}")

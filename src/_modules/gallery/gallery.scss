@@ -1,1 +1,74 @@
-// gallery styles
+._gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  li{
+    flex-basis: 320px;
+    position: relative;
+    margin-bottom: $base/2;
+    @include responsive(desktop,large-desktop){
+      flex-basis: 22%;
+      margin: 8px;
+    }
+    @include responsive(desktop,large-desktop){
+      &:hover{
+        cursor: pointer;
+        ._caption{
+          opacity: 1;
+        }
+      }
+      ._caption{
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+    }
+  }
+
+
+  ._caption{
+    position: absolute;
+    bottom:0;
+    padding: 10px 10px 10px 60px;
+    color:$white;
+    font-size: 1.6rem;
+    font-weight: $regular;
+    background: linear-gradient(to top, rgba(0,0,0,1), transparent);
+
+    i{
+      position: absolute;
+      display: block;
+      left:15px;
+      font-size: 3rem;
+      bottom:20px;
+    }
+  }
+  ._image{
+    width:100%;
+  }
+
+}
+#lightbox{
+  .modal-header{
+    padding:0;
+    height: 0;
+    border:none;
+    button.close{
+      background: $white;
+      color:$black;
+      width:30px;
+      height:30px;
+      position: absolute;
+      top:-15px;
+      right:-15px;
+      border:2px solid $white;
+      border-radius: 50%;
+      opacity: 1;
+      font-size: 25px;
+    }
+  }
+  ._lightboxImg{
+    width:100%;
+  }
+}

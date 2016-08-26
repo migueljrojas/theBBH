@@ -1,0 +1,54 @@
+extends ../_layouts/base
+include ../_modules/map/map
+include ../_modules/hotelcard/hotelcard
+include ../_modules/quote/quote
+include ../_modules/gallery/gallery
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  main._page._location
+    section._top
+      img(src="/images/location/buenos-aires.jpg")
+      h2!= site.data.location.city
+      h3!= site.data.location.country
+      +quote(site.data.location.quote)
+    section._locationInfo
+      .container
+        .row
+          .col-xs-24
+            each val in site.data.location.info
+              p!= val.text
+
+          .col-xs-24
+            +gallery(site.data.location.images)
+
+    section._hotels.-pattern
+      .container
+        .row
+          .col-xs-24
+            h2._heading
+              | Hoteles con emoción en
+              span.-bold!= ' ' + site.data.location.city
+
+            button.button._mapToggle
+              span
+              i.fa.fa-chevron-up
+
+            .row
+              .col-xs-24
+                +map()
+
+        .row
+          each val in site.data.location.hotels
+            .col-xs-24.col-md-8.col-lg-6
+              +hotelcard(val,'compact')
+
+          .col-xs-24._showMore
+            p
+              span Más Hoteles
+            a(href="#")
+              i.fa.fa-chevron-down
+
