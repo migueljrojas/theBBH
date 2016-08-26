@@ -1,0 +1,90 @@
+{
+  "name":"Tierra Atacama Hotel & Spa",
+  "city":"Atacama",
+  "country":"Chile",
+  "description":"Tierra Atacama Hotel & Spa está ubicado en las afueras del pintoresco pueblo de San Pedro de Atacama, en la impresionante inmensidad del Altiplano, uno de los lugares más maravillosos del mundo. En este acogedor hotel boutique, se funde lo moderno y tradicional con materiales locales trabajados por artesanos de la zona. El living con chimenea es el refugio ideal para disfrutar de la imponente vista al volcán Licancabur antes de degustar las exquisiteces de nuestro restaurant. Las espectaculares terrazas con fogones son el lugar preferido de nuestros huéspedes. En Tierra Atacama, vivirá una experiencia única e irrepetible.",
+  "carousel":[
+    {
+      "imgsrc":"/images/home/slider-1.jpg",
+      "title":"Tierra Atacama Hotel & Spa",
+      "subtitle":"Atacama, Chile",
+      "link":"#"
+    },
+    {
+      "imgsrc":"/images/home/slider-2.jpg",
+      "title":"Buenos Aires Hotel & Spa",
+      "subtitle":"Buenos Aires, Argentina",
+      "link":"#"
+    }
+  ],
+  "hotelInfo":[
+    {
+      "title":"Actividades",
+      "items":[
+        {
+          "name":"Tailormade tours"
+        },
+        {
+          "name":"Trekking y cabalgatas"
+        },
+        {
+          "name":"Paseos en auto y bicicleta"
+        },
+        {
+          "name":"Relax en UMA Spa"
+        }
+      ]
+    },
+    {
+      "title":"Servicios",
+      "items":[
+        {
+          "name":"Masajes y tratamientos de belleza"
+        },
+        {
+          "name":"Restaurant y bar"
+        },
+        {
+          "name":"Yoga"
+        },
+        {
+          "name":"WiFi Internet"
+        }
+      ]
+    }
+  ],
+  "hotels":[
+    {
+      "name":"CASA SUR RECOLETA",
+      "city":"Recoleta, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-01.jpg",
+      "price":"high",
+      "url":"#"
+    },
+    {
+      "name":"HUB PORTEÑO",
+      "city":"Recoleta, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-02.jpg",
+      "price":"high",
+      "url":"#"
+    },
+    {
+      "name":"SAINTE JEANNE HOTEL BOUTIQUE & SPA",
+      "city":"Mar del Plata, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-03.jpg",
+      "price":"mid",
+      "url":"#"
+    },
+    {
+      "name":"LEGADO MITICO",
+      "city":"Palermo, Buenos Aires",
+      "country":"Argentina",
+      "image":"/images/search/hotel-04.jpg",
+      "price":"mid",
+      "url":"#"
+    }
+  ]
+}

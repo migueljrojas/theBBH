@@ -1,1 +1,20 @@
-// quote styles
+._quote{
+  padding:15px;
+  background: $light-green;
+  color:$brown;
+  font-style: italic;
+  font-size:1.8rem;
+  position:relative;
+  z-index:2;
+  text-align: center;
+  @include responsive(desktop,large-desktop){
+    position:absolute;
+    border:1px solid $brown;
+    padding: 20px;
+    font-size:3.2rem;
+    width:50%;
+    left:0;
+    right:0;
+    margin: auto;
+  }
+}

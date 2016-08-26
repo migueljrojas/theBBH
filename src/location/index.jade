@@ -14,8 +14,9 @@ block content
       img(src="/images/location/buenos-aires.jpg")
       h2!= site.data.location.city
       h3!= site.data.location.country
-      +quote(site.data.location.quote)
+
     section._locationInfo
+      +quote(site.data.location.quote)
       .container
         .row
           .col-xs-24

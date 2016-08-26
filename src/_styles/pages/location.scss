@@ -53,12 +53,19 @@
     }
   }
   ._locationInfo{
+    position: relative;
     padding: $base 0;
     p{
       padding: 0 20px;
       font-size:1.8rem;
       line-height:2.4rem;
       margin-bottom: $base/2;
+    }
+    @include responsive(desktop,large-desktop){
+      padding-top: $base*3;
+    }
+    ._quote{
+      top:-50px;
     }
   }
   ._map{

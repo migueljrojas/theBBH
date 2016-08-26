@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00097c6b-8cab-4f2c-8e65-0f7701492917" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_modules/gallery/gallery.jade" afterPath="$PROJECT_DIR$/src/_modules/gallery/gallery.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_modules/gallery/gallery.js" afterPath="$PROJECT_DIR$/src/_modules/gallery/gallery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_modules/gallery/gallery.scss" afterPath="$PROJECT_DIR$/src/_modules/gallery/gallery.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_modules/hotelcard/hotelCard.jade" afterPath="$PROJECT_DIR$/src/_modules/hotelcard/hotelCard.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_modules/hotelcard/hotelCard.scss" afterPath="$PROJECT_DIR$/src/_modules/hotelcard/hotelCard.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_modules/map/map.js" afterPath="$PROJECT_DIR$/src/_modules/map/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_scripts/main.js" afterPath="$PROJECT_DIR$/src/_scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_styles/modules/_buttons.scss" afterPath="$PROJECT_DIR$/src/_styles/modules/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_modules/quote/quote.jade" afterPath="$PROJECT_DIR$/src/_modules/quote/quote.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_modules/quote/quote.scss" afterPath="$PROJECT_DIR$/src/_modules/quote/quote.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_styles/pages/hotel.scss" afterPath="$PROJECT_DIR$/src/_styles/pages/hotel.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_styles/pages/location.scss" afterPath="$PROJECT_DIR$/src/_styles/pages/location.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_styles/pages/search.scss" afterPath="$PROJECT_DIR$/src/_styles/pages/search.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/search/index.jade" afterPath="$PROJECT_DIR$/src/search/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/search/search.js" afterPath="$PROJECT_DIR$/src/search/search.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/location/index.jade" afterPath="$PROJECT_DIR$/src/location/index.jade" />
     </list>
     <ignored path="theBBH.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,51 +30,43 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/search/index.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-23.555555">
-                  <caret line="48" column="34" selection-start-line="38" selection-start-column="8" selection-end-line="48" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/location/index.jade">
               <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-24.481482">
+                  <caret line="53" column="34" selection-start-line="28" selection-start-column="4" selection-end-line="53" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/hotel/index.jade">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.50638795">
+                  <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="quote.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/_modules/quote/quote.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-4.0983605">
+                  <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="quote.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/_modules/quote/quote.jade">
+              <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="-1.8518518">
-                  <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="gallery.jade" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/_modules/gallery/gallery.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.46457607">
-                  <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="hotelCard.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_modules/hotelcard/hotelCard.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="carousel.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_modules/carousel/carousel.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="1" column="30" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="30" />
-                  <folding />
+                  <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+                  <folding>
+                    <marker date="1472172398469" expanded="true" signature="11:44" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -90,81 +75,33 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="search.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_styles/pages/search.scss">
+          <file leaf-file-name="hotel.json" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/_data/hotel.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.9016395">
-                  <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="73" selection-end-column="3" />
+                <state vertical-scroll-proportion="0.94145197">
+                  <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_buttons.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_styles/modules/_buttons.scss">
+          <file leaf-file-name="home.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/_styles/pages/home.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.081967">
-                  <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-                  <folding />
+                <state vertical-scroll-proportion="-0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="3" />
+                  <folding>
+                    <marker date="1472081499580" expanded="true" signature="15:53" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/search/search.js">
+          <file leaf-file-name="hotel.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/_styles/pages/hotel.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_modules/map/map.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="location.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_styles/pages/location.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.819672">
-                  <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="gallery.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/_modules/gallery/gallery.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.879081">
-                  <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="hotelCard.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_modules/hotelcard/hotelCard.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.9016395">
-                  <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="47" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_scripts/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+                <state vertical-scroll-proportion="-2.8688524">
+                  <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -173,18 +110,18 @@
           <file leaf-file-name="location.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/_data/location.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-23.647058">
-                  <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+                <state vertical-scroll-proportion="-11.1470585">
+                  <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="66" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="search.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/_data/search.json">
+          <file leaf-file-name="location.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/_styles/pages/location.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-18.382353">
-                  <caret line="34" column="5" selection-start-line="3" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+                <state vertical-scroll-proportion="-2.4918032">
+                  <caret line="81" column="2" selection-start-line="81" selection-start-column="2" selection-end-line="101" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -200,10 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/src/_styles/_pages.scss" />
-        <option value="$PROJECT_DIR$/src/_styles/modules/_bootstrap-custom.scss" />
-        <option value="$PROJECT_DIR$/src/_styles/modules/_icons.scss" />
         <option value="$PROJECT_DIR$/src/_styles/fonts/dragon-font.css" />
         <option value="$PROJECT_DIR$/src/_styles/mixins/_variables.scss" />
         <option value="$PROJECT_DIR$/src/_styles/mixins/_color.scss" />
@@ -246,10 +179,15 @@
         <option value="$PROJECT_DIR$/src/_scripts/main.js" />
         <option value="$PROJECT_DIR$/src/_data/location.json" />
         <option value="$PROJECT_DIR$/src/_modules/hotelcard/hotelCard.jade" />
-        <option value="$PROJECT_DIR$/src/location/index.jade" />
-        <option value="$PROJECT_DIR$/src/_styles/pages/location.scss" />
         <option value="$PROJECT_DIR$/src/_modules/hotelcard/hotelCard.scss" />
         <option value="$PROJECT_DIR$/src/_modules/gallery/gallery.scss" />
+        <option value="$PROJECT_DIR$/src/_modules/quote/quote.jade" />
+        <option value="$PROJECT_DIR$/src/location/index.jade" />
+        <option value="$PROJECT_DIR$/src/_styles/pages/location.scss" />
+        <option value="$PROJECT_DIR$/src/_modules/quote/quote.scss" />
+        <option value="$PROJECT_DIR$/src/_styles/pages/hotel.scss" />
+        <option value="$PROJECT_DIR$/src/hotel/index.jade" />
+        <option value="$PROJECT_DIR$/src/_data/hotel.json" />
       </list>
     </option>
   </component>
@@ -394,6 +332,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="hotel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theBBH" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theBBH" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="_styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -475,6 +431,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theBBH" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theBBH" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quote" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -752,52 +730,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/_styles/mixins/_animations.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/font-awesome/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17564403">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/font-awesome/scss/font-awesome.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_modules/footer/footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5854801">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_styles/modules/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11709602">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_data/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2055749">
@@ -936,16 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_styles/pages/home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62756956">
-          <caret line="355" column="28" selection-start-line="355" selection-start-column="28" selection-end-line="355" selection-end-column="28" />
-          <folding>
-            <marker date="1472081499580" expanded="true" signature="15:53" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_layouts/base.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.097973">
@@ -966,22 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_data/home.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-81.617645">
-          <caret line="111" column="3" selection-start-line="111" selection-start-column="3" selection-end-line="111" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1090,34 +996,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_data/location.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.647058">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_styles/pages/search.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.9016395">
           <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="73" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/location/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8518518">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_styles/pages/location.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.819672">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1140,7 +1022,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_modules/gallery/gallery.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46457607">
+        <state vertical-scroll-proportion="-14.814815">
           <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding />
         </state>
@@ -1148,8 +1030,108 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_modules/gallery/gallery.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.879081">
+        <state vertical-scroll-proportion="-11.918033">
           <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_data/home.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.294118">
+          <caret line="14" column="3" selection-start-line="1" selection-start-column="2" selection-end-line="14" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11261261">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_modules/quote/quote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_modules/quote/quote.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8518518">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding>
+            <marker date="1472172398469" expanded="true" signature="11:44" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_modules/quote/quote.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0983605">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_styles/pages/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="3" />
+          <folding>
+            <marker date="1472081499580" expanded="true" signature="15:53" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/location/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.481482">
+          <caret line="53" column="34" selection-start-line="28" selection-start-column="4" selection-end-line="53" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_styles/pages/location.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4918032">
+          <caret line="81" column="2" selection-start-line="81" selection-start-column="2" selection-end-line="101" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_styles/pages/hotel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8688524">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hotel/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50638795">
+          <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_data/location.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.1470585">
+          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="66" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_data/hotel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94145197">
+          <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="3" />
           <folding />
         </state>
       </provider>
