@@ -1,7 +1,7 @@
 ._hotel-card{
-  padding-bottom: 10px;
+  padding:10px;
   border-bottom: 1px dotted $gray;
-  margin-bottom: 10px;
+  background: $white;
   .img-container{
     position: relative;
     width:30%;
@@ -21,7 +21,6 @@
       @include responsive(desktop,large-desktop){
         padding: 20px;
         background: linear-gradient(to top, rgba(0,0,0,0.6) 10%, transparent 50%);
-        width:calc(100% - 16px);
         &:hover{
           ._social,
           ._price{
@@ -101,14 +100,25 @@
         }
       }
     }
+    .img-responsive{
+      width:100%;
+    }
   }
 
   a{
     text-decoration: none;
     h2{
       font-weight: $regular;
+      font-size:2rem;
       color:$olive-green;
+      @include responsive(desktop,large-desktop){
+        font-size:2.4rem;
+      }
     }
+  }
+
+  h3,h4{
+    font-size:1.6rem;
   }
 
   @include responsive(desktop,large-desktop){
@@ -116,11 +126,39 @@
     padding: 0;
     margin-bottom:$base;
     ._info{
-      padding: 20px;
+      padding: 15px;
       border:1px solid $olive-green;
       border-top:none;
       height:120px;
-      width:calc(100% - 16px);
+      width:100%;
+    }
+  }
+
+  &.-compact{
+    ._data-overlay{
+      display:none;
+    }
+    @include responsive(desktop,large-desktop){
+      padding: 0;
+      margin: 0;
+      ._data-overlay{
+        display:none;
+      }
+      ._info{
+        position: absolute;
+        height: auto;
+        bottom:0;
+        border:none;
+        width:calc(100% - 16px);
+        padding-top: 80px;
+        background: linear-gradient(to top, rgba(0,0,0,0.7) 30%, transparent);
+        h2{
+          color:$white
+        }
+        h3,h4{
+          display: none;
+        }
+      }
     }
   }
 }

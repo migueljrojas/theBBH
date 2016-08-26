@@ -18,4 +18,58 @@ button:hover,
     outline:none !important;
 }
 .button{
+	&._mapToggle{
+		background: $gray;
+		bordeR:none;
+		color:$white;
+		height:$base - 10px;
+		padding: 0 15px;
+		line-height: $base - 10px;
+		font-size:1.8rem;
+		float: right;
+		i{
+			margin-left: 10px;
+			vertical-align: top;
+			line-height: 30px;
+			transition: all 0.5s ease;
+		}
+		span{
+			width:100px;
+			height:30px;
+			display: inline-block;
+			position: relative;
+			&:before{
+				content: 'Ocultar mapa';
+				opacity:1;
+				position: absolute;
+				display: block;
+				transition: all 0.5s ease;
+			}
+			&:after{
+				content: 'Mostrar mapa';
+				opacity:0;
+				position: absolute;
+				display: block;
+				transition: all 0.5s ease;
+			}
+		}
+
+		&.-up{
+			span{
+				&:before{
+					opacity:0;
+				}
+				&:after{
+					opacity:1;
+				}
+			}
+			i{
+				transform: rotate(180deg);
+				transform-origin: 50%;
+			}
+		}
+		@include responsive(desktop,large-desktop){
+			margin-top: 10px;
+		}
+	}
 }

@@ -1,6 +1,18 @@
-mixin gallery(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+mixin gallery(data)
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the gallery module
+  ul._gallery.list-unstyled
+    each val in data
+      li(data-toggle="modal",data-target="#lightbox")
+        img._image.img-responsive(src="#{val.src}")
+        span._caption!= val.caption
+          i.fa.fa-search-plus
+
+
+  #lightbox.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            i.fa.fa-times-circle
+        .modal-body
+          img._lightboxImg
