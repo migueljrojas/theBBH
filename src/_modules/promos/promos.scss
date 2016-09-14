@@ -5,26 +5,171 @@ $bg:#F0EFEB;
 ._promos{
   margin-bottom: $base;
   li{
+    position: relative;
+    text-align: center;
+
     &.-moreInfo{
       cursor:pointer;
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        background: $bg;
+        bottom:-50px;
+        left:0;
+        right:0;
+        width:20px;
+        height:20px;
+        margin: auto;
+        border-top:1px solid $fade-gold;
+        border-left:1px solid $fade-gold;
+        transform: rotate(45deg);
+        z-index:100;
+        opacity:0;
+        transition: opacity 0.3s ease;
+      }
+      &.-showMore{
+        &:after{
+          opacity: 1;
+        }
+      }
+    }
+    img.img-responsive{
+      display:inline-block;
     }
   }
 
 }
 ._promos-more-info{
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: $base;
-  padding: $base;
+  padding: 0 $base/2;
   background: $bg;
-  display:none;
+  border:1px solid $fade-gold;
+  max-height:0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity:0;
+
+  @include responsive(desktop,large-desktop){
+    width:95%;
+  }
 
   &.-visible{
-    display:block;
+    padding: $base/2;
+    max-height:1200px;
+    opacity:1;
+    @include responsive(desktop,large-desktop){
+      max-height:600px;
+    }
   }
 
   .tab{
-    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    float:left;
+    position: absolute;
+
     &.-active{
+      opacity: 1;
+      position: relative;
+    }
+
+    h3{
+      text-transform: none;
+      margin-bottom: 20px;
+    }
+
+    ul{
+      list-style: none;
+      padding: 0;
+      margin:0;
+      li{
+        @extend .fa-star;
+        margin-bottom: 20px;
+        display: block;
+        &:before{
+          @extend .fa;
+          float:left;
+          margin-right: 5px;
+          color:$gold;
+        }
+
+        p{
+          font-size:15px;
+          padding-left: 18px;
+        }
+
+        h4{
+          font-weight: 600;
+          font-size:15px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  ._city-logo{
+    margin-bottom:10px;
+  }
+
+  ._tabSelector{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0!important;
+    @include responsive(desktop,large-desktop){
+      margin: 10px 0!important;
+    }
+    li{
       display:block;
+      text-transform: uppercase;
+      height:32px;
+      background: transparent;
+      border: 1px solid $fade-gold;
+      transition: all 0.3s ease;
+      line-height: 32px;
+      padding: 0 10px;
+      margin-right: 10px;
+      font-weight: 600;
+      cursor:pointer;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+
+      @include responsive(desktop,large-desktop){
+        float:left;
+        width: 40%;
+      }
+
+      &.-active{
+        background: $fade-gold;
+      }
+    }
+  }
+
+  p:first-of-type{
+    font-size:15px;
+  }
+
+  p.small{
+    font-size:13px;
+    margin: 20px 0;
+
+    @include responsive(desktop,large-desktop){
+      margin-top:80px;
+    }
+
+    a{
+      display:block;
+      margin-top:5px;
+      color:$text-color;
+      cursor:pointer;
+
+      &:before{
+        content: '- ';
+      }
     }
   }
 }

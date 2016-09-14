@@ -6,17 +6,20 @@ mixin promos(doc)
 
   if doc.fullMode === 'true'
     .row._promos-more-info
-      .col-xs-24.col-md-8.pull-left
-        img(src="/images/logo-city-gold.png")
+      .col-xs-24.col-md-10.pull-left
+        img._city-logo(src="/images/logo-city-gold.png")
         p Citigold Boutique Hotel Program (1) es el programa más exclusivo para clientes Citigold que le brinda excepcionales privilegios en los hoteles boutique más selectos de Latinoamerica pertenecientes a la colección de pequeños hoteles TheBBH.
         ul._tabSelector
           li.-active(data-tab="_elite")
             | Citygold &reg; Elite
           li(data-tab="_premium")
             | Citygold &reg; Premium
-      .col-xs-24.col-md-16.pull-right
+      .col-xs-24.col-md-14.pull-right._tabContainer
         .tab.-active(data-target="_elite")
-          h3 Como cliente Citigold ®, usted será un invitado especial y podrá disfrutar de los siguientes beneficios:
+          h3
+            |Como cliente&nbsp;
+            span.-bold Citigold ®,&nbsp;
+            |usted será un invitado especial y podrá disfrutar de los siguientes beneficios:
           ul
             li
               h4 Experiencia Boutique (3)
@@ -35,7 +38,10 @@ mixin promos(doc)
               p Para brindarle mayor flexibilidad usted podrá optar por abonar hasta en 6 cuotas sin interés
 
         .tab(data-target="_premium")
-          h3 Como cliente Citigold® Premium, usted será un invitado especial y podrá disfrutar de los siguientes beneficios:
+          h3
+            |Como cliente&nbsp;
+            span.-bold Citigold® Premium,&nbsp;
+            |usted será un invitado especial y podrá disfrutar de los siguientes beneficios:
           ul
             li
               h4 Tarifa preferencial (4)
@@ -52,6 +58,6 @@ mixin promos(doc)
 
       .col-xs-24.col-md-8
         p.small * Deberá identificarse como cliente Citigold Premium presentando en mostrador su tarjeta de débito, MasterCard Platinum, Visa Platinum abonar un mínimo de estadía de dos noches en el mismo hotel y realizar la reserva en forma directa con el hotel.
-          a Si usted no es cliente de Citygold haga click aquí (6)
-          a Ver legales
+          a(href="http://goo.gl/YwQT8") Si usted no es cliente de Citygold haga click aquí (6)
+          a(href="http://goo.gl/QKO8Q") Ver legales
 

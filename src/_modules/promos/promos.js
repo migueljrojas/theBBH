@@ -4,11 +4,11 @@
 var Promos = function() {
 
   $('.-moreInfo').on('click',function(){
+    $(this).toggleClass('-showMore');
     $('._promos-more-info').toggleClass('-visible');
   });
 
   function tabs(){
-
     $('._tabSelector li').each(function () {
       $(this).on("click", function(){
 
@@ -22,8 +22,6 @@ var Promos = function() {
 
       });
     });
-
-
   }
 
   return tabs();
