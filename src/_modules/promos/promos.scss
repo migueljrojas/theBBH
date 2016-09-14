@@ -1,1 +1,30 @@
-// promos styles
+$fade-gold: #CCC7B3;
+$gold:#A18255;
+$bg:#F0EFEB;
+
+._promos{
+  margin-bottom: $base;
+  li{
+    &.-moreInfo{
+      cursor:pointer;
+    }
+  }
+
+}
+._promos-more-info{
+  margin-bottom: $base;
+  padding: $base;
+  background: $bg;
+  display:none;
+
+  &.-visible{
+    display:block;
+  }
+
+  .tab{
+    display: none;
+    &.-active{
+      display:block;
+    }
+  }
+}

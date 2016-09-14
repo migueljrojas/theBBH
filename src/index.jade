@@ -1,6 +1,7 @@
 extends _layouts/base
 include _modules/link/link
 include _modules/carousel/carousel
+include _modules/promos/promos
 
 block content
   main._page._home
@@ -55,11 +56,7 @@ block content
 
     section._promos
       .container
-        ul.list-unstyled.row
-          each val in site.data.home.promos
-            li.col-xs-24.col-md-12
-              a(href="#{val.link}")
-                img.img-responsive(src="#{val.src}")
+        +promos(site.data.home.promos)
 
     section._locations.-pattern
       .container

@@ -86,5 +86,17 @@
       "price":"mid",
       "url":"#"
     }
-  ]
+  ],
+  "promos":{
+    "banners":[
+      {
+        "src":"/images/hotel/beneficio1.png"
+      },
+      {
+        "src":"/images/hotel/beneficio2.png",
+        "moreInfo":"true"
+      }
+    ],
+    "fullMode":"true"
+  }
 }

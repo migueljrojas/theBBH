@@ -2,6 +2,7 @@ extends ../_layouts/base
 include ../_modules/carousel/carousel
 include ../_modules/map/map
 include ../_modules/hotelcard/hotelcard
+include ../_modules/promos/promos
 
 block config
   //- Correct base url pathing for this page
@@ -51,6 +52,9 @@ block content
                 img.-negative(src="/images/BBH-logo.svg")
               | Miembro desde
               span.-bold 2012
+
+      +promos(site.data.hotel.promos)
+
       .row
         .col-xs-24
           h2._heading
