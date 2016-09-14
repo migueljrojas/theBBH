@@ -74,16 +74,17 @@
       "link":"#"
     }
   ],
-  "promos":[
-    {
-      "src":"/images/home/promo1.jpg",
-      "link":"#"
-    },
-    {
-      "src":"/images/home/promo2.jpg",
-      "link":"#"
-    }
-  ],
+  "promos":{
+    "banners":[
+      {
+        "src":"/images/home/promo1.jpg"
+      },
+      {
+        "src":"/images/home/promo2.jpg"
+      }
+    ],
+    "fullMode":"false"
+  },
   "locations":[
     {
       "city":"Buenos Aires",

@@ -2,6 +2,7 @@ extends ../_layouts/base
 include ../_modules/carousel/carousel
 include ../_modules/map/map
 include ../_modules/hotelcard/hotelcard
+include ../_modules/promos/promos
 
 block config
   //- Correct base url pathing for this page
@@ -12,9 +13,11 @@ block content
     section._head.-pattern
       .container
         .row
-          .col-xs-24
+          .col-xs-24.col-md-16
             h1!= site.data.hotel.name
             h2!= site.data.hotel.city + ', ' + site.data.hotel.country
+          .col-xs-24.col-md-8
+            img._category.pull-right(src="/images/hotel/category.png")
           .col-xs-24._top
             +carousel('hotel',site.data.hotel.carousel,'regular')
           .col-xs-24._desc
@@ -49,6 +52,9 @@ block content
                 img.-negative(src="/images/BBH-logo.svg")
               | Miembro desde
               span.-bold 2012
+
+      +promos(site.data.hotel.promos)
+
       .row
         .col-xs-24
           h2._heading
@@ -65,9 +71,11 @@ block content
 
     section._hotels
       .container
-
-
         .row
+          .col-xs-24
+            h2._heading
+              | OTROS HOTELES CON EMOCIÓN EN
+              span.-bold  ATACAMA
           each val in site.data.hotel.hotels
             .col-xs-24.col-md-8.col-lg-6
               +hotelcard(val,'compact')

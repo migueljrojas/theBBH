@@ -1,6 +1,63 @@
-mixin promos(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
+mixin promos(doc)
+  ul.list-unstyled.row._promos
+    each val in doc.banners
+      li.col-xs-24.col-md-12(class=(val.moreInfo==='true' ? '-moreInfo' : '-plain'))
+        img.img-responsive(src="#{val.src}")
 
-  div(class=spec.__class)&attributes(attributes)
-    p This is an example paragraph for the promos module
+  if doc.fullMode === 'true'
+    .row._promos-more-info
+      .col-xs-24.col-md-10.pull-left
+        img._city-logo(src="/images/logo-city-gold.png")
+        p Citigold Boutique Hotel Program (1) es el programa más exclusivo para clientes Citigold que le brinda excepcionales privilegios en los hoteles boutique más selectos de Latinoamerica pertenecientes a la colección de pequeños hoteles TheBBH.
+        ul._tabSelector
+          li.-active(data-tab="_elite")
+            | Citygold &reg; Elite
+          li(data-tab="_premium")
+            | Citygold &reg; Premium
+      .col-xs-24.col-md-14.pull-right._tabContainer
+        .tab.-active(data-target="_elite")
+          h3
+            |Como cliente&nbsp;
+            span.-bold Citigold ®,&nbsp;
+            |usted será un invitado especial y podrá disfrutar de los siguientes beneficios:
+          ul
+            li
+              h4 Experiencia Boutique (3)
+              p Dentro de su estadía usted podrá disfrutar de una experiencia boutique única como cooking class, degustaciones regionales, Thai Massage, entre otros. Cada hotel boutique lo sorprenderá con una propuesta diferente.
+            li
+              h4 Up grade de habitación garantizada (2)
+              p Usted obtendrá una habitación superior, al precio de una inferior con una tarifa preferencial sobre tarifa mostrador.
+            li
+              h4 Late check-out garantizado (4) hasta las 2 pm.
+              p Garantizado hasta las 2.00 pm.
+            li
+              h4 Desayuno Boutique sin cargo con horario extendido
+              p Usted podrá disfrutar de su desayuno en cualquier espacio común del hotel o en su habitación hasta las 12.00 pm.
+            li
+              h4 6 cuotas sin interés (5)
+              p Para brindarle mayor flexibilidad usted podrá optar por abonar hasta en 6 cuotas sin interés
+
+        .tab(data-target="_premium")
+          h3
+            |Como cliente&nbsp;
+            span.-bold Citigold® Premium,&nbsp;
+            |usted será un invitado especial y podrá disfrutar de los siguientes beneficios:
+          ul
+            li
+              h4 Tarifa preferencial (4)
+              p Usted obtendrá una tarifa preferencial sobre tarifa mostrador.
+            li
+              h4  Late check-out garantizado
+              p  Garantizado hasta las 2.00 pm.
+            li
+              h4  Desayuno Boutique sin cargo con horario extendido
+              p  Usted podrá disfrutar de su desayuno en cualquier espacio común del hotel o en su habitación hasta las 12.00 pm.
+            li
+              h4 6 cuotas sin interés (5)
+              p Para brindarle mayor flexibilidad usted podrá optar por abonar hasta en 6 cuotas sin interés.
+
+      .col-xs-24.col-md-8
+        p.small * Deberá identificarse como cliente Citigold Premium presentando en mostrador su tarjeta de débito, MasterCard Platinum, Visa Platinum abonar un mínimo de estadía de dos noches en el mismo hotel y realizar la reserva en forma directa con el hotel.
+          a(href="http://goo.gl/YwQT8") Si usted no es cliente de Citygold haga click aquí (6)
+          a(href="http://goo.gl/QKO8Q") Ver legales
+

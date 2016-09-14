@@ -9,6 +9,7 @@ var Carousel = require('../_modules/carousel/carousel');
 var Gallery = require('../_modules/gallery/gallery');
 var Search = require('../search/search');
 var Map = require('../_modules/map/map');
+var Promos = require('../_modules/promos/promos');
 
 $(function() {
   require('bootstrap');
@@ -17,5 +18,6 @@ $(function() {
   new Search();
   new Gallery();
   new Map();
+  new Promos();
   console.log('Welcome to Yeogurt!');
 });
