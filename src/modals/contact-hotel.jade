@@ -1,0 +1,20 @@
+extends ../_modules/modal/modal
+block content
+    form._contactHotel
+        +closeModal
+
+        h2
+            | CONTACTE CON TERRA ATACAMA HOTEL & SPA
+        .form-group
+            label Nombre
+            input(type='text')
+        .form-group
+            label Email
+            input(type='email')
+        .form-group
+            label Teléfono
+            input(type='number')
+        .form-group
+            label Mensaje
+            textarea
+        input.button(type='submit', value='Enviar')

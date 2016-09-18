@@ -1,0 +1,98 @@
+.modal{
+
+  .close-modal{
+    position: absolute;
+    top:0;
+    right:0;
+    display:block;
+    background: $olive-green-dark;
+    color:$white;
+    width:20px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+    font-size:16px;
+    bordeR:none;
+    padding: 0;
+  }
+
+  ._contactHotel{
+    width:310px;
+    padding: 10px;
+    background: $white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @include responsive(landscape) {
+      margin-top:5px;
+    }
+
+    @include responsive(desktop,large-desktop) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    h2{
+      width:270px;
+      text-transform: uppercase;
+      font-weight: $bold;
+      font-size:21px;
+      line-height:24px;
+      color: $olive-green;
+      margin-bottom:$base/2;
+    }
+
+    label{
+      display: block;
+      margin-bottom: 5px;
+      font-weight:$light;
+      font-size:1.6rem;
+    }
+
+    input,textarea{
+      padding: 7px;
+      width:100%;
+      border:1px solid transparentize($olive-green-dark, 0.7);
+      transition: border 0.3s ease;
+      &:focus{
+        border:1px solid transparentize($olive-green-dark, 0.5);
+        outline:none;
+      }
+    }
+
+    input{
+      height:32px;
+      line-height: 32px;
+
+      &[type=submit]{
+        border:none;
+        background: transparentize($olive-green-dark,0.5);
+        color:$white;
+        font-weight:$regular;
+        font-size:18px;
+        transition: background 0.3s ease;
+        padding: 0;
+        @include responsive(desktop,large-desktop){
+          max-width:150px;
+        }
+
+        &:hover{
+          background: transparentize($olive-green-dark,0.2);
+        }
+      }
+
+      &[type=number]{
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+
+    textarea{
+      height:$base*3;
+    }
+  }
+}
