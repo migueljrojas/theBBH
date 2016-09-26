@@ -54,7 +54,25 @@ block content
 
     section._promos
       .container
-        +promos(site.data.home.promos)
+        .row
+          .col-xs-24.col-md-12
+            a._benefitBanner.-BBH(href="javascript:void(0)")
+              span._medal
+              p._text
+                span._title Mencionando a TheBBH al hacer la reserva accede a: 
+                span._description Upgrade sujeto a disponibilidad y un baño relajante con sales de la Bodega Algodón
+              
+          .col-xs-24.col-md-12
+            a._benefitBanner.-city(href="javascript:void(0)")
+              img.city-logo(src="/images/logo-city.svg")
+              p._text
+                span._title Beneficios exclusivos <b>City Gold</b> 
+                span._description 20% off <b>+ tratamiento vip</b>
+                span._moreInfo
+                  span
+                    i.fa.fa-plus
+                  span info
+            
 
     section._locations.-pattern
       .container
@@ -78,4 +96,3 @@ block content
           a._more-locations.col-xs-24.col-md-12.col-md-offset-6(href="#")
             i.fa.fa-map-marker
             | MÁS DESTINOS <br>QUE APASIONAN AQUÍ
-

@@ -149,6 +149,7 @@
     @include responsive(desktop,large-desktop){
       float: right;
       text-align: right;
+      margin-right: -8px;
       li{
         display: inline-block;
         float: none;

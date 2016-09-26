@@ -78,6 +78,7 @@
         transition: background 0.3s ease;
         padding: 5px 15px;
         line-height: 0;
+        margin-bottom:$base;
 
         &:hover{
           background: transparentize($olive-green-dark,0.2);

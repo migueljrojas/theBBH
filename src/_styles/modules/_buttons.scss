@@ -1,6 +1,6 @@
 button,
 .button,
-.button *{	
+.button *{
 	&:focus{
 		outline:none;
 		box-shadow:none;
@@ -8,12 +8,12 @@ button,
 }
 button,
 button:active,
-button:focus, 
+button:focus,
 button:hover,
 .btn,
-.btn:active, 
-.btn:focus, 
-.btn:hover{   
+.btn:active,
+.btn:focus,
+.btn:hover{
     outline:none !important;
 }
 .button{
@@ -34,7 +34,7 @@ button:hover,
 
 	&._mapToggle{
 		background: $gray;
-		bordeR:none;
+		border:none;
 		color:$white;
 		height:$base - 10px;
 		padding: 0 15px;
@@ -84,6 +84,7 @@ button:hover,
 		}
 		@include responsive(desktop,large-desktop){
 			margin-top: 10px;
+			margin-right: 7.5%;
 		}
 	}
 }

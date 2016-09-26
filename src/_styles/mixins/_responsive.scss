@@ -1,11 +1,19 @@
 $canary-screen-sm-min: 320px;
+$canary-screen-sm-max: 480px;
 $canary-screen-md-min: 900px;
+$canary-screen-md-max: 1280px;
 $canary-screen-lg-min: 1440px;
 
 /** Mixins for responsive content **/
 
 @mixin landscape {
     @media screen and (max-width: #{$canary-screen-md-min - 1px}) {
+        @content;
+    }
+}
+
+@mixin landscapeWide {
+    @media screen and (max-width: #{$canary-screen-sm-max}) {
         @content;
     }
 }
@@ -18,6 +26,12 @@ $canary-screen-lg-min: 1440px;
 
 @mixin desktop {
     @media screen and (min-width: #{$canary-screen-md-min}) and (max-width: #{$canary-screen-lg-min - 1px}){
+        @content;
+    }
+}
+
+@mixin desktopWide {
+    @media screen and (min-width: #{$canary-screen-md-max}) and (max-width: #{$canary-screen-lg-min - 1px}){
         @content;
     }
 }
@@ -49,6 +63,11 @@ $canary-screen-lg-min: 1440px;
                 @content;
             }
         }
+        @if $device == landscapeWide {
+            @include landscapeWide {
+                @content;
+            }
+        }
         @if $device == ipad-portrait {
             @include ipad-portrait {
                 @content;
@@ -66,6 +85,11 @@ $canary-screen-lg-min: 1440px;
         }
         @if $device == desktop {
             @include desktop {
+                @content;
+            }
+        }
+        @if $device == desktopWide {
+            @include desktopWide {
                 @content;
             }
         }

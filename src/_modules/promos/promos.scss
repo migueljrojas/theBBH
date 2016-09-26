@@ -4,11 +4,7 @@ $bg:#F0EFEB;
 
 ._promos{
   margin-bottom: $base;
-  li{
-    position: relative;
-    text-align: center;
-
-    &.-moreInfo{
+  .-moreInfo{
       cursor:pointer;
       &:after{
         content: '';
@@ -34,12 +30,8 @@ $bg:#F0EFEB;
         }
       }
     }
-    img.img-responsive{
-      display:inline-block;
-    }
   }
 
-}
 ._promos-more-info{
   width:100%;
   margin-left: auto;

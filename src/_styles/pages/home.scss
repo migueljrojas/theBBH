@@ -141,6 +141,9 @@
     overflow: hidden;
     position: relative;
     padding: 0;
+    @include responsive(landscape) {
+      margin-bottom:10px;
+    }
     @include responsive(desktop,large-desktop) {
       height: 310px;
       margin-bottom:8px;

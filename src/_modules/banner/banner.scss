@@ -1,1 +1,125 @@
-// banner styles
+._benefitBanner{
+  display:flex;
+  border:1px solid $olive-green;
+  padding: 15px;
+  background:$white;
+  min-width: 280px;
+  width:100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+
+  @include responsive(landscapeWide){
+    margin-bottom: 15px;
+    flex-flow: column;
+    ._medal,.city-logo{
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+    ._text{
+      text-align:center;
+    }
+    ._title{
+      margin-bottom: 10px;
+    }
+  }
+
+  @include responsive(ipad-portrait){
+    margin-bottom: 15px;
+    ._medal,.city-logo{
+      margin-right: 0;
+    }
+  }
+
+  ._medal,.city-logo{
+    width:80px;
+    height:80px;
+    flex-basis: 80px;
+    margin-right: 15px;
+  }
+
+  ._text{
+    display: inherit;
+    flex-basis: calc(100% - 100px);
+    flex-flow: column;
+    font-size:1.6rem;
+    font-weight:$light;
+    color:$text-color;
+  }
+
+  &.-city{
+    ._text{
+      flex-flow: row;
+      color:$olive-green;
+      font-size:1.9rem;
+    }
+
+    ._title{
+      padding-right: 10px;
+      border-right:1px solid $olive-green;
+      line-height: 40px;
+      letter-spacing: -0.8px;
+    }
+
+    ._description{
+      text-transform: uppercase;
+      line-height: 40px;
+      margin-right: 10px;
+    }
+
+    ._moreInfo{
+      span{
+        &:first-child{
+          display: inline-block;
+          color:$olive-green;
+          font-size: 2rem;
+          padding: 2px;
+          border: 1px solid;
+          border-radius: 3px;
+          width: 30px;
+          text-align: center;
+          margin:8px 5px 0 0;
+        }
+        &:last-child{
+          padding-bottom: 9px;
+        }
+
+      }
+
+    }
+    @include responsive(landscapeWide){
+      ._text{
+        flex-flow: column;
+      }
+      ._title{
+        border-right:none;
+        border-bottom:1px solid $olive-green;
+        padding-bottom: 10px;
+        padding-right: 0;
+      }
+    }
+
+    @include responsive(ipad-landscape,small-desktop){
+      ._title{
+        line-height:2.1rem;
+      }
+
+      ._description{
+        text-transform: uppercase;
+        line-height:2.1rem;
+      }
+    }
+  }
+
+  ._title{
+    font-weight:$regular;
+    margin-right:10px;
+  }
+
+  &:hover{
+    text-decoration: none;
+    background: transparentize($olive-green, 0.9);
+  }
+}

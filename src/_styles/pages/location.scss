@@ -22,7 +22,7 @@
     img{
       height:100%;
       width:auto;
-      @include responsive(ipad-portrait,large-desktop){
+      @include responsive(ipad-portrait,large-desktop,desktopWide){
         height:auto;
         width:100%;
       }
