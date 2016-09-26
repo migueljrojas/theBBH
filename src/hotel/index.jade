@@ -1,5 +1,5 @@
 extends ../_layouts/base
-include ../_modules/carousel/carousel
+include ../_modules/carouselslick/carouselSlick
 include ../_modules/map/map
 include ../_modules/hotelcard/hotelcard
 include ../_modules/promos/promos
@@ -17,9 +17,9 @@ block content
             h1!= site.data.hotel.name
             h2!= site.data.hotel.city + ', ' + site.data.hotel.country
           .col-xs-24.col-md-8
-            img._category.pull-right(src="/images/hotel/category.png")
+            img._category.pull-right(src="../images/hotel/category.png")
           .col-xs-24._top
-            +carousel('hotel',site.data.hotel.carousel,'regular')
+            +carouselSlick('hotel','gallery',site.data.hotel.carousel,3,1)
           .col-xs-24._desc
             p!= site.data.hotel.description
 
@@ -49,7 +49,7 @@ block content
                 li 5 min San Pedro de Atacama
             li
               span._logoicon
-                img.-negative(src="/images/BBH-logo.svg")
+                img.-negative(src="../images/BBH-logo.svg")
               | Miembro desde
               span.-bold 2012
 

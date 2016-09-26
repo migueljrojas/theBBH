@@ -1,6 +1,6 @@
 .modal{
 
-  .close-modal{
+  .close{
     position: absolute;
     top:0;
     right:0;
@@ -64,23 +64,6 @@
     input{
       height:32px;
       line-height: 32px;
-
-      &[type=submit]{
-        border:none;
-        background: transparentize($olive-green-dark,0.5);
-        color:$white;
-        font-weight:$regular;
-        font-size:18px;
-        transition: background 0.3s ease;
-        padding: 0;
-        @include responsive(desktop,large-desktop){
-          max-width:150px;
-        }
-
-        &:hover{
-          background: transparentize($olive-green-dark,0.2);
-        }
-      }
 
       &[type=number]{
         &::-webkit-inner-spin-button,

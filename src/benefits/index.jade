@@ -1,0 +1,56 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  main._page._benefitsBoutique
+    section._top.-pattern
+      .container
+        .row
+          .col-xs-24
+            ._medal
+            ._heading
+              h1 Beneficios Boutique
+              p Loren ipsum dolor sit amet Loren ipsum dolor sit amet  Loren ipsum dolor sit amet  Loren ipsum dolor sit amet
+
+    section._list
+      .container
+        .row
+          .col-xs-24
+            h2._listTitle Hoteles participantes
+
+            .row
+              - for (var x = 1; x <= 12; x++)
+                .col-xs-24.col-md-8.col-lg-6
+                  ._hotel-card
+                    .img-container
+                      a(href="#")
+                        img(src="http://hypebeast.com/image/2015/08/watch-this-breathtaking-film-of-patagonia-in-8k-resolution-0.jpg",alt="Hotel dummy")
+                      ._data-overlay
+                        p._benefit loren ipsum dolor sit amet loren ipsum dolor sit amet
+                        ul._social
+                          li.-facebook
+                            i.fa.fa-facebook-f
+                          li.-twitter
+                            i.fa.fa-twitter
+                          li.-pinterest
+                            i.fa.fa-pinterest-p
+                    ._info
+                      a(href="#")
+                        h2 Nombre de hotel
+                      h3 buenos Aires, Recoleta
+                      h4 Argentina
+
+          .col-xs-24._showMore
+            p
+              span Más beneficios
+            a(href="#")
+              i.fa.fa-chevron-down
+
+          .col-xs-24
+            a._terms(href="#") Bases y Condiciones TheBBH - Beneficios Boutique
+
+
+

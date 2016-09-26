@@ -1,0 +1,277 @@
+._benefitsBoutique{
+  ._top{
+    padding: $base 0;
+    text-align: center;
+    @include responsive(ipad-landscape,small-desktop,desktop,large-desktop){
+      text-align: left;
+    }
+
+    ._medal,._emblem{
+      display:block;
+      width:80px;
+      height:80px;
+      margin: $base/2 auto;
+      vertical-align: middle;
+
+      @include responsive(ipad-portrait,ipad-landscape,small-desktop){
+        width:120px;
+        height:120px;
+        margin: $base;
+        display:inline-block;
+      }
+
+      @include responsive(desktop, large-desktop){
+        width:150px;
+        height:150px;
+        margin: $base $base $base 0;
+        display:inline-block;
+      }
+    }
+
+    ._heading{
+      display:inline-block;
+      vertical-align: middle;
+      @include responsive(ipad-portrait,ipad-landscape,small-desktop,desktop,large-desktop){
+        max-width: 70%;
+      }
+    }
+
+    h1{
+      font-weight: $bold;
+      font-size:2.8rem;
+      color:$brown;
+      @include responsive(ipad-portrait,ipad-landscape,small-desktop,desktop,large-desktop){
+        font-size:4rem;
+      }
+    }
+
+    p{
+      font-style: italic;
+      font-size:1.8rem;
+      @include responsive(ipad-portrait,ipad-landscape,small-desktop,desktop,large-desktop){
+        font-size:2.4rem;
+      }
+    }
+  }
+  ._list{
+    padding: $base 0;
+
+    ._listTitle{
+      font-weight: $light;
+      text-align: center;
+      text-transform: uppercase;
+      color:$olive-green;
+      margin-bottom: $base;
+      @include responsive(ipad-landscape,small-desktop,desktop,large-desktop){
+        font-size:2.6rem;
+      }
+    }
+
+    ._hotel-card{
+      .img-container{
+        overflow: hidden;
+        width:100%;
+        height: 150px;
+        img{
+          width:100%;
+          height: auto;
+        }
+        @include responsive(ipad-landscape,small-desktop,desktop,large-desktop){
+          height: 300px;
+          img{
+            width:auto;
+            height: 100%;
+            min-width: 100%;
+          }
+        }
+      }
+      ._benefit{
+        color:$white;
+        font-weight: $bold;
+        font-size:1.8rem;
+      }
+      ._info{
+        background: $olive-green;
+        padding: 10px;
+
+        h2{
+          color:$olive-green-dark;
+        }
+
+        h3,h4{
+          color:$white;
+        }
+      }
+
+      ._social{
+        bottom: initial;
+        top:10px;
+      }
+
+      ._benefit{
+        position: absolute;
+        z-index:2;
+        bottom:10px;
+        left:10px;
+        right:10px;
+      }
+    }
+
+    ._showMore{
+      margin-top:20px;
+      text-transform: uppercase;
+      p{
+        text-align: center;
+        color:$olive-green;
+        font-size:2rem;
+        span{
+          font-weight:$regular;
+          color:$brown;
+          margin-right: 5px;
+        }
+      }
+
+      a{
+        display: block;
+        text-align: center;
+        color:$olive-green;
+        font-size:2rem;
+      }
+    }
+    ._terms{
+      display: block;
+      text-align: center;
+      padding: 0 20px;
+      margin-top: $base;
+    }
+  }
+
+  &.-citygold{
+    ._top {
+      ._heading {
+        display: block;
+        vertical-align: middle;
+        @include responsive(ipad-portrait, ipad-landscape, small-desktop, desktop, large-desktop) {
+          max-width: none;
+        }
+      }
+
+      ._logo{
+        width:300px;
+        height:80px;
+        background:url('../images/hotel/logo-city-gold.png') no-repeat center center;
+        background-size: contain;
+      }
+    }
+
+    ._hotel-card{
+      ._social{
+        top: initial;
+        bottom:10px;
+      }
+    }
+  }
+
+  &.-hotelList{
+    ._hotel-card{
+      ._social{
+        top: initial;
+        bottom:10px;
+      }
+    }
+  }
+
+  &.-black{
+    ._top {
+      background: $black;
+      h1,p{
+        color:$white;
+      }
+      h1{
+        text-transform: none;
+        span{
+          text-transform: uppercase;
+        }
+      }
+      ._emblem{
+        background-color: $black;
+      }
+    }
+    ._list{
+      ._hotel-card{
+        ._info{
+          background: $black;
+          h2{
+            color:$olive-green;
+          }
+        }
+        ._social{
+          top: initial;
+          bottom:10px;
+        }
+      }
+    }
+  }
+
+  &.-destination{
+
+    ._top{
+      ._title{
+        width:300px;
+        display: inline-block;
+        vertical-align: middle;
+        @include responsive(ipad-portrait,ipad-landscape,small-desktop,desktop, large-desktop) {
+          margin-right: 40px;
+        }
+      }
+      ._medal,._emblem{
+        display:block;
+        float:left;
+        width:80px;
+        height:80px;
+        margin:-15px 20px 0 0;
+        vertical-align: middle;
+
+        @include responsive(ipad-portrait,ipad-landscape,small-desktop,desktop, large-desktop){
+          width:80px;
+          height:80px;
+          display:block;
+        }
+      }
+    }
+
+    ._hotel-card{
+      .img-container{
+        overflow: hidden;
+        width:100%;
+        height: 0;
+        padding-bottom: 100%;
+        img{
+          width:100%;
+          height: auto;
+        }
+        @include responsive(ipad-landscape,small-desktop,desktop,large-desktop){
+          height: 0;
+          padding-bottom: 60%;
+        }
+      }
+      ._info{
+        background: $white;
+        padding: 10px;
+
+        h2,h3{
+          color:$olive-green-dark;
+        }
+
+        p{
+          color:$olive-green;
+        }
+      }
+
+      ._social{
+        top: initial;
+        bottom:10px;
+      }
+    }
+  }
+}

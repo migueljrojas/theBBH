@@ -4,5 +4,12 @@
     &:hover{
       text-decoration: none;
     }
+
+    img{
+      width:auto;
+      max-width: none!important;
+      height:100%!important;
+      margin:auto;
+    }
   }
 }

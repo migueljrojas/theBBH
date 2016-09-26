@@ -10,6 +10,12 @@ $canary-screen-lg-min: 1440px;
     }
 }
 
+@mixin small-desktop {
+    @media screen and (min-width: #{$canary-screen-md-min}) and (max-width: #{($canary-screen-lg-min - $canary-screen-md-min) /2 + $canary-screen-md-min}){
+        @content;
+    }
+}
+
 @mixin desktop {
     @media screen and (min-width: #{$canary-screen-md-min}) and (max-width: #{$canary-screen-lg-min - 1px}){
         @content;
@@ -21,10 +27,40 @@ $canary-screen-lg-min: 1440px;
         @content;
     }
 }
+
+/*iPad*/
+/*Ipad portrait*/
+@mixin ipad-portrait{
+    @media only screen  and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        @content;
+    }
+}
+/*Ipad Landscape*/
+@mixin ipad-landscape{
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}
+
 @mixin responsive($devices...) {
     @each $device in $devices {
         @if $device == landscape {
             @include landscape {
+                @content;
+            }
+        }
+        @if $device == ipad-portrait {
+            @include ipad-portrait {
+                @content;
+            }
+        }
+        @if $device == ipad-landscape {
+            @include ipad-landscape {
+                @content;
+            }
+        }
+        @if $device == small-desktop {
+            @include small-desktop {
                 @content;
             }
         }

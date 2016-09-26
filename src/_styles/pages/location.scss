@@ -1,23 +1,30 @@
 ._location{
-  ._top{
-    height:300px;
+
+  ._top {
     position: relative;
     overflow: hidden;
-    @include responsive(desktop,large-desktop){
-      height:600px;
+    height: 280px;
+    padding: 0;
+    @include responsive(ipad-portrait) {
+      height: 320px;
+    }
+    @include responsive(ipad-landscape) {
+      height: 425px;
+    }
+    @include responsive(small-desktop, desktop) {
+      height: 530px;
+    }
+    @include responsive(large-desktop) {
+      height:auto;
+      min-height: 600px;
     }
 
     img{
-      height:300px;
+      height:100%;
       width:auto;
-      position: absolute;
-      bottom:0;
-      transform: translateX(-25%);
-      @include responsive(desktop,large-desktop){
+      @include responsive(ipad-portrait,large-desktop){
         height:auto;
-        min-height:600px;
         width:100%;
-        transform: none;
       }
     }
 

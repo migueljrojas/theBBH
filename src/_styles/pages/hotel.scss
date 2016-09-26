@@ -18,57 +18,23 @@
   }
   ._top {
     position: relative;
-    height: 250px;
-    @include responsive(desktop, large-desktop) {
-      height: 400px;
+    height: 280px;
+    margin-top: $base/2;
+    @include responsive(ipad-portrait) {
+      height: 320px;
+    }
+    @include responsive(ipad-landscape) {
+      height: 425px;
+    }
+    @include responsive(small-desktop, desktop) {
+      height: 530px;
+    }
+    @include responsive(large-desktop) {
+      margin-top: $base;
+      height: 600px;
     }
   }
-  ._carousel {
-    margin: 20px 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 250px;
-    @include responsive(desktop, large-desktop) {
-      height: 400px;
-    }
 
-    .carousel-inner {
-      height: 250px;
-      @include responsive(desktop, large-desktop) {
-        height: 400px;
-      }
-    }
-
-    .item {
-      height: 100%;
-      background: $black;
-      overflow: hidden;
-      img {
-        height: 100%;
-        width: auto;
-        max-width: none;
-        transform: translateX(-20%);
-      }
-      @include responsive(desktop, large-desktop) {
-        padding-bottom: 0;
-        img {
-          transform: none;
-          width: 100%;
-          height: auto;
-          position: absolute;
-          bottom: 0;
-        }
-      }
-    }
-
-    .carousel-caption {
-      display:none;
-    }
-    .carousel-indicators {
-      bottom: 20px;
-    }
-  }
   ._desc{
     padding: $base $base/2;
     p{
@@ -136,6 +102,52 @@
           display: inline-block;
           font-size:2.6rem;
           vertical-align: top;
+        }
+
+        ._price{
+          list-style: none;
+          margin:0;
+          padding:0;
+
+          i{
+            font-size:1.8rem;
+            margin: 5px 3px 0 0;
+            width: 13px;
+          }
+
+          li{
+            display:inline-block;
+            color:$olive-green;
+            opacity: 0.5;
+          }
+
+          &.-low{
+            li{
+              &:nth-child(1){
+                opacity: 1;
+              }
+            }
+          }
+          &.-mid{
+            li{
+              &:nth-child(1),
+              &:nth-child(2){
+                opacity: 1;
+              }
+            }
+          }
+          &.-high{
+            li{
+              &:not(:last-child){
+                opacity: 1;
+              }
+            }
+          }
+          &.-top{
+            li{
+              opacity: 1;
+            }
+          }
         }
       }
     }

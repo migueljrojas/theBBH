@@ -7,7 +7,6 @@
   z-index: 100;
   @include responsive(desktop,large-desktop){
     height:$base*3;
-    overflow-x: hidden;
   }
 
   ._logo{
@@ -41,7 +40,7 @@
     font-family: $secondary-font;
     float:left;
     font-size:48px;
-    line-height: 40px;
+    line-height: 20px;
     color:$white;
     margin: auto;
     width:100%;
@@ -52,9 +51,10 @@
       width:auto;
       color:$olive-green;
       text-align: left;
-      margin-left: $base*3.5;
+      margin-left: 110px;
       font-size:70px;
       margin-top:30px;
+      line-height: 5px;
     }
   }
 
@@ -68,11 +68,11 @@
 
   ._bottom{
     max-height:0;
-    width: 100vw;
+    width: 100%;
     overflow-y:hidden;
     overflow-x:hidden;
     background: $bg-olive;
-    transition: max-height 0.7s ease, padding 0.5s ease;
+    transition: max-height 0.5s ease, padding 0.3s ease;
     position: relative;
     top:-3px;
     @include responsive(desktop,large-desktop){
@@ -100,6 +100,17 @@
       text-align: right;
       border-bottom:1px solid transparentize($light-green,0.7);
       padding-right: 20px;
+      transition: all 0.3s ease;
+
+      &:hover{
+        text-decoration: none;
+        @include responsive(desktop,large-desktop){
+          background: rgba(0,0,0,0.1);
+        }
+      }
+      &:focus{
+        text-decoration: none;
+      }
     }
     @include responsive(desktop,large-desktop){
       width: auto;
@@ -109,11 +120,7 @@
       a{
         padding:0 15px;
         text-align: center;
-        transition: background 0.5s;
-        &:hover{
-          text-decoration: none;
-          background: rgba(0,0,0,0.1);
-        }
+        transition: background 0.3s;
       }
     }
   }
@@ -122,8 +129,17 @@
     margin-top:15px;
     @include responsive(desktop,large-desktop){
       margin-top:0;
-      padding-left: $base*3.5;
+      padding-left: $base*2.5;
       float: left;
+      display: flex;
+      max-width: 55%;
+      position: relative;
+    }
+    @include responsive(small-desktop){
+      max-width: 65%;
+    }
+    @include responsive(ipad-landscape){
+      max-width: 70%;
     }
   }
   ._subNav{
@@ -139,6 +155,26 @@
         border-right:1px solid $light-green;
         &:first-child{
           border-left:1px solid $light-green;
+        }
+      }
+    }
+    @include responsive(ipad-landscape){
+      position: absolute;
+      top:$base;
+      right:0;
+      max-height: 0;
+      transition: max-height 0.3s ease, padding-bottom 0.3s ease;
+      overflow: hidden;
+      background-color: $olive-green;
+      padding-bottom: 0;
+
+      li{
+        float:none;
+        display: block;
+        border-left:none;
+        border-right:none;
+        &:first-child{
+          border-left:none;
         }
       }
     }
@@ -170,7 +206,69 @@
     }
   }
 
+  .-topLevel{
+    &.-open{
+      background: rgba(0,0,0,0.1);
+      &+ ._subMenu{
+        max-height:500px;
+        border-bottom: 1px solid transparentize($light-green,0.7);
+        @include responsive(desktop,large-desktop){
+          max-height:200px;
+        }
+      }
 
+      @include responsive(desktop, large-desktop){
+        position: relative;
+        &:after{
+          content: '';
+          display:block;
+          position: absolute;
+          bottom:-2px;
+          left:0;
+          right:0;
+          margin:auto;
+          width:10px;
+          height:7px;
+          border-bottom: 7px solid $white;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+        }
+      }
+    }
+  }
+
+  ._subMenu{
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    padding-top: 0;
+
+    ._name{
+      font-weight: $light;
+      color:transparentize($white,0.2);
+    }
+
+    @include responsive(desktop,large-desktop){
+      background: $white;
+      position: absolute;
+      left:92px;
+      right:0;
+      ul{
+        max-height:$base*2;
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        li{
+          flex-basis: 25%;
+        }
+      }
+
+      ._name{
+        font-weight: $light;
+        color:transparentize($olive-green-dark,0.2);
+      }
+    }
+  }
 
   .hamburguer {
     width: 40px;
@@ -179,7 +277,7 @@
     top: 0;
     right: 0;
     transform: rotate(0deg);
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
     cursor: pointer;
 
     span{
@@ -225,11 +323,23 @@
       }
 
       &+ ._bottom{
-        max-height:600px;
+        max-height:1000px;
         padding-bottom: 10px;
-        transition: max-height 1.7s ease, padding 0.5s ease;
+        transition: max-height 0.5s ease, padding 0.3s ease;
         overflow-x: hidden;
         overflow-y: visible;
+      }
+    }
+    &.-ipad{
+      display:none;
+      @include responsive(ipad-landscape){
+        display:block;
+        &.-open{
+          &+ ._subNav{
+            max-height:300px;
+            padding-bottom: 10px;
+          }
+        }
       }
     }
   }

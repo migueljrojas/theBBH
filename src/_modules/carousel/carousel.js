@@ -7,6 +7,11 @@ var Carousel = function() {
 
   $('.carousel-indicators li:first-child').addClass('active');
   $('.carousel-inner .item:first-child').addClass('active');
+
+  if( $('._carousel').hasClass('multiple')){
+
+  }
+
 };
 
 module.exports = Carousel;

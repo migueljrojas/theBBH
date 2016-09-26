@@ -1,0 +1,19 @@
+mixin carouselSlick(id, mode, data, slidesToShow, slidesToScroll)
+  div(class="#{mode} _carouselSlick")
+    .carouselSlickSlides(data-slick='{"slidesToShow":#{slidesToShow}, "slidesToScroll":#{slidesToScroll}}')
+      each val, index in data
+        .slide
+          a(href="#{val.link}")
+            img(src='#{val.imgsrc}', alt='#{val.title}')
+          ._data-overlay
+            ul._social
+              li.-facebook
+                i.fa.fa-facebook-f
+              li.-twitter
+                i.fa.fa-twitter
+              li.-pinterest
+                i.fa.fa-pinterest-p
+          .carousel-caption
+              a(href="#{val.link}")
+                h2.-bold!= val.title
+                h3!= val.subtitle

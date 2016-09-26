@@ -1,15 +1,13 @@
 extends _layouts/base
 include _modules/link/link
-include _modules/carousel/carousel
+include _modules/carouselslick/carouselSlick
 include _modules/promos/promos
 
 block content
   main._page._home
 
     section.container-fluid._top
-      .row
-        .col-xs-24
-          +carousel('home',site.data.home.carousel,'regular')
+      +carouselSlick('home','regular',site.data.home.carousel,1,1)
 
     section._mid.-pattern
       .container

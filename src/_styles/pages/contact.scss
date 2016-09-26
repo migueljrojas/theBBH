@@ -1,0 +1,92 @@
+._contact{
+  ._top{
+    padding: $base 0;
+    text-align: center;
+
+    ._medal,._emblem{
+      display:block;
+      width:80px;
+      height:80px;
+      margin: $base/2 auto;
+      vertical-align: middle;
+
+      @include responsive(ipad-portrait,ipad-landscape,small-desktop){
+        width:120px;
+        height:120px;
+        display:inline-block;
+      }
+
+      @include responsive(desktop, large-desktop){
+        width:150px;
+        height:150px;
+        display:inline-block;
+      }
+    }
+
+    h1{
+      font-weight: $bold;
+      font-size:2.8rem;
+      color:$brown;
+      @include responsive(ipad-portrait,ipad-landscape,small-desktop,desktop,large-desktop){
+        font-size:4rem;
+      }
+    }
+  }
+  .form{
+    padding: $base 5%;
+
+    @include responsive(ipad-landscape,small-desktop,desktop,large-desktop){
+      padding: $base 0%;
+    }
+
+    label{
+      display: block;
+      margin-bottom: 5px;
+      font-weight:$light;
+      font-size:1.6rem;
+    }
+
+    input,textarea{
+      padding: 7px;
+      width:100%;
+      border:1px solid transparentize($olive-green-dark, 0.7);
+      transition: border 0.3s ease;
+      &:focus{
+        border:1px solid transparentize($olive-green-dark, 0.5);
+        outline:none;
+      }
+    }
+
+    input{
+      height:32px;
+      line-height: 32px;
+
+      &[type=number]{
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+
+      &.btn.btn-success{
+        border:none;
+        background: transparentize($olive-green-dark,0.5);
+        color:$white;
+        font-weight:$regular;
+        font-size:18px;
+        transition: background 0.3s ease;
+        padding: 5px 15px;
+        line-height: 0;
+
+        &:hover{
+          background: transparentize($olive-green-dark,0.2);
+        }
+      }
+    }
+
+    textarea{
+      height:$base*3;
+    }
+  }
+}
