@@ -160,6 +160,7 @@
         height:calc(100% - 100px);
         @include responsive(small-desktop,desktop,ipad-landscape,large-desktop){
           height:100%;
+          min-width:100%;
         }
       }
 
